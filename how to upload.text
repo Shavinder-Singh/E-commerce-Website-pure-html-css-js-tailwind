@@ -15,6 +15,19 @@ git status
 git remote add origin https://singhshub@bitbucket.org/by-shavinder/e-commerce.git
 git push -f origin master
 
+------------------------------------------------------------------------------------------
+How to first upload on github 
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Shavinder-Singh/E-commerce-Website-pure-html-css-js-tailwind.git
+git push -u origin main
+-----
+or push exisiting changes
+git add .
+git commit -m "Your commit message"
+git push
 
 
 
