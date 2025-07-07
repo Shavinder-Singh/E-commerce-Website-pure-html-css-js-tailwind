@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="../../output.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="./homepage.css">
+
+    <link rel="stylesheet" href="../../assets/swiper-11.2.8/package/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../assets/swiper-11.2.8/package/swiper-bundle.min.css" />
+
+
+</head>
+
+<body>
+    <div class="loader_homepage">
+        <!-- Announcement bar -->
+        <section
+            class="announcement_bar font-satoshi bg-primary flex justify-center items-center h-[43px] vm:h-[34px]  overflow-scroll ">
+        </section>
+        <script>
+            fetch('../../components/announcementbar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.querySelector(".announcement_bar").innerHTML = data;
+
+                    var script = document.createElement('script');
+                    script.src = '../../components/componentsJs/announcement.js';
+                    document.body.appendChild(script);
+                })
+        </script>
+        <!-- Navbar -->
+        <div id="navbar_mobile"></div>
+
+        <!-- Searchbar slider wrapper -->
+        <div
+            class="swiper_slider search_bar_items_wrapper px-[16px] md:px-[50px] lg:px-[40px] 2xl:px-[100px] hidden absolute top-[114px] bg-white text-black p-[10px] left-0 h-[100%] z-[999] md:top-[127px] lg:top-[128px] 2xl:top-[129px] w-[100%]">
+        </div>
+
+        <script src="../../assets/swiper-11.2.8/package/swiper-bundle.min.js"></script>
+        <script>
+            // Load navbar
+            fetch('../../components/navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("navbar_mobile").innerHTML = data;
+
+                    var script = document.createElement('script');
+                    script.src = "../../components/componentsJs/navbar.js";
+                    document.body.appendChild(script);
+                });
+
+            // Load search slider
+            fetch('../../components/searchslider.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.querySelector(".swiper_slider").innerHTML = data;
+
+                    // ✅ Swiper initialized with unique class
+                    const search_swiper = new Swiper(".search_slider", {
+                        slidesPerView: 2,
+                        spaceBetween: 30,
+                        pagination: {
+                            el: ".swiper-pagination",
+                            clickable: true,
+                        },
+                        breakpoints: {
+                            768: {
+                                slidesPerView: 3,
+                                spaceBetween: 20,
+                            },
+                            1024: {
+                                slidesPerView: 1,
+                                spaceBetween: 70,
+                            }
+                        }
+                    });
+                });
+        </script>
+
+
+
+        <!-- main section -->
+        <section class="main_section">
+            <div class="main_container">
+                <div
+                    class="main_header bg-mainbg opacity-[100%] md:flex  md:relative  2xl:px-[100px] md:pb-[0px] lg:pb-[11px] 2xl:pb-[116px]">
+                    <div class=" z-10">
+                        <div class="pt-[40px]">
+                            <div
+                                class="main_content mb-[20px] 2xl:mb-[32px] xs:max-w-[90%]  sm:max-w-[80%] md:max-w-[100%] pl-[16px] lg:pl-[50px] 2xl:px-0">
+                                <h1
+                                    class=" font-integral text-[36px] md:text-[30px] lg:text-[42px] 2xl:text-[64px] lg:leading-[39px] 2xl:leading-[64px] leading-[34px]  text-primary bg-mainbg opacity-[100%]   max-w-[90%] md:max-w-[50%]">
+                                    FIND
+                                    CLOTHES
+                                    THAT MATCHES YOUR STYLE</h1>
+                            </div>
+                            <div
+                                class="mb-[24px] 2xl:mb-[21px] px-[16px] lg:pl-[50px] xs:max-w-[90%] sm:max-w-[80%] md:max-w-[50%] 2xl:px-0">
+                                <p
+                                    class="font-satoshiregular  font-medium  leading-[20px] text-[14px] md:text-[14px] lg:text-[16px] text-customGray  opacity-[60%]">
+                                    Browse
+                                    through our diverse range of meticulously crafted garments, designed to bring out
+                                    your
+                                    individuality and cater to your sense of style.
+                                </p>
+                            </div>
+                            <div
+                                class="mb-[20px] 2xl:mb-[48px] px-[16px] lg:pl-[50px] sm:max-w-[50%] md:max-w-[50%] lg:max-w-[35%] 2xl:max-w-[213px] 2xl:px-0">
+                                   
+                                <a href="../../pages/categorypage/category.html" class="bg-primary text-secondary block text-center  text-[16px] lg:text-[16px] py-[16px] px-[54px] md:py-[9px] md:px-[53px] lg:py-[15px] w-[100%] rounded-[62px] opacity-[100%] font-satoshimedium leading-[auto]  hover:opacity-75 transition-all duration-75"><span>Shop Now</span></a>
+                            </div>
+                        </div>
+                        <div class="analytics_main w-[100%] px-[56px] md:px-[16px] lg:pl-[50px]  2xl:px-0">
+                            <div class="flex gap-10 items-center justify-center md:justify-normal  w-[100%] pb-[12px]">
+                                <div class="text-center ">
+                                    <h1
+                                        class="font-satoshibold text-[24px] lg:text-[30px] 2xl:text-[40px] text-primary">
+                                        200+
+                                    </h1>
+                                    <p
+                                        class="font-satoshiregular font-customGray opacity-[60%] text-[12px] text-nowrap 2xl:text-[16px]">
+                                        International Brands</p>
+                                </div>
+                                <div class=" w-[1px] h-[10vh] bg-custom-gray opacity-[10%]">
+
+                                </div>
+                                <div class="text-center ">
+                                    <h1
+                                        class="font-satoshibold text-[24px] lg:text-[30px] 2xl:text-[40px] text-primary">
+                                        2,000+
+                                    </h1>
+                                    <p
+                                        class="font-satoshi font-customGray opacity-[60%] text-[12px] text-nowrap 2xl:text-[16px]">
+                                        High-Quality Products</p>
+                                </div>
+                                <div class=" w-[1px] h-[10vh] bg-custom-gray opacity-[10%] hidden lg:flex">
+
+                                </div>
+                                <div class="text-center hidden lg:flex   flex-col">
+                                    <h1
+                                        class="font-satoshibold  text-[24px] lg:text-[30px] 2xl:text-[40px] text-primary">
+                                        30,000+
+                                    </h1>
+                                    <p
+                                        class="font-satoshi font-customGray opacity-[60%] text-[12px] text-nowrap 2xl:text-[16px]">
+                                        Happy
+                                        Customers</p>
+                                </div>
+                            </div>
+                            <div class="text-center md:hidden">
+                                <h1 class="font-satoshibold text-[24px] text-primary">30,000+</h1>
+                                <p class="font-satoshi font-customGray opacity-[60%] text-[12px] text-nowrap">Happy
+                                    Customers</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute top-0 left-0 w-[100%] h-[100%]  lg:h-[100%] hidden md:flex ">
+
+                        <img src="../../assets/images/bigmain.png" alt="main_image"
+                            class="w-[100%] h-[100%] object-contain px-[20px] lg:px-[50px] 2xl:px-0">
+                        <div class=" absolute top-[40%] right-[44%] 2xl:top-[297px] 2xl:right-[634px]">
+                            <svg width="56" height="56" viewBox="0 0 56 56" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M28 0C28.9506 15.0527 40.9472 27.0495 56 28C40.9472 28.9506 28.9506 40.9472 28 56C27.0495 40.9472 15.0527 28.9506 0 28C15.0527 27.0495 27.0495 15.0527 28 0Z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <div class="absolute top-[49px] right-[42px] 2xl:top-[86px] 2xl:right-[80px]">
+                            <svg width="104" height="104" viewBox="0 0 104 104" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M52 0C53.7654 27.955 76.0448 50.2347 104 52C76.0448 53.7654 53.7654 76.0448 52 104C50.2347 76.0448 27.955 53.7654 0 52C27.955 50.2347 50.2347 27.955 52 0Z"
+                                    fill="black" />
+                            </svg>
+
+                        </div>
+
+                    </div>
+
+                    <!-- image main mobile -->
+                    <div class="relative top-0 md:hidden">
+                        <img src="../../assets/images/Rectangle2.png" alt="main_image" class="w-[100%]">
+                        <div class="absolute top-[137px] left-[27px]">
+                            <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M22 0C22.7469 11.8271 32.1728 21.2531 44 22C32.1728 22.7469 22.7469 32.1728 22 44C21.2531 32.1728 11.8271 22.7469 0 22C11.8271 21.2531 21.2531 11.8271 22 0Z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <div class="absolute top-[40px] right-[21px]">
+                            <svg width="76" height="76" viewBox="0 0 76 76" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M38 0C39.2901 20.4286 55.5712 36.71 76 38C55.5712 39.2901 39.2901 55.5712 38 76C36.71 55.5712 20.4286 39.2901 0 38C20.4286 36.71 36.71 20.4286 38 0Z"
+                                    fill="black" />
+                            </svg>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="main_footer">
+                    <div
+                        class="bg-primary flex flex-wrap justify-evenly  w-[100%] px-[16px] py-[40.4px] gap-[34px] lg:px-[80px] 2xl:px-[101.73px]">
+                        <div class="w-[82px] lg:w-[120px] h-[25px]">
+                            <img src="../../assets/images/versace.png" alt="versace"
+                                class=" w-[82px]  lg:w-[120px] h-[25px]">
+                        </div>
+                        <div class="w-[82px]  lg:w-[120px] h-[25px]">
+                            <img src="../../assets/images/zara.png" alt="zara" class=" w-[82px]  lg:w-[120px] h-[25px]">
+                        </div>
+                        <div class="w-[82px]  lg:w-[120px] h-[25px]">
+                            <img src="../../assets/images/gucci.png" alt="gucci"
+                                class=" w-[82px]  lg:w-[120px] h-[25px]">
+                        </div>
+                        <div class="w-[82px]  lg:w-[120px] h-[25px]">
+                            <img src="../../assets/images/prada.png" alt="prada"
+                                class=" w-[82px]  lg:w-[120px] h-[25px]">
+                        </div>
+                        <div class="w-[82px]  lg:w-[120px] h-[25px]">
+                            <img src="../../assets/images/calvin.png" alt="calvin"
+                                class=" w-[82px]  lg:w-[120px] h-[25px]">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- New Arrivals -->
+        <section class="pt-[50px] pb-[40px] lg:pb-[64px] text-center">
+            <div class="mb-[32px]">
+                <h1 class="uppercase font-integral text-[32px]  md:text-[30px] lg:text-[48px] 2xl:text-[48px]">
+                    New
+                    Arrivals
+                </h1>
+            </div>
+            <div class="swiper_arrivals mb-[24px] md:mb-[36px] md:px-[20px] lg:px-[50px] 2xl:px-[100px]">
+                <script>
+                    fetch("../../components/swiper.html")
+                        .then(response => response.text())
+                        .then(data => {
+                            // console.log(data);
+                            var swiper_arrivals = document.querySelector(".swiper_arrivals");
+                            swiper_arrivals.innerHTML = data;
+                            setTimeout(() => {
+                                setTimeout(() => {
+                                    new Swiper(".mySwiper", {
+                                        slidesPerView: 2,
+                                        spaceBetween: 30,
+                                        pagination: {
+                                            el: ".swiper-pagination",
+                                            clickable: true,
+                                        },
+                                        breakpoints: {
+                                            320: {
+                                                slidesPerView: 'auto',
+                                                spaceBetween: 20,
+                                            },
+                                            768: {
+                                                slidesPerView: 'auto',
+                                                spaceBetween: 20,
+                                            },
+                                            1024: {
+                                                slidesPerView: "auto",
+                                                spaceBetween: 100,
+                                            },
+                                            1280: {
+                                                slidesPerView: 'auto',
+                                                spaceBetween: 15,
+                                            },
+                                            1440: {
+                                                slidesPerView: 4,
+                                                spaceBetween: 20,
+                                            }
+                                        }
+                                    });
+                                    var script = document.createElement('script');
+                                    script.src = '../../components/componentsJs/primaryproductswiper.js';
+                                    document.body.appendChild(script);
+
+                                }, 300);
+                            }, 100);
+                        })
+                </script>
+            </div>
+            <div class="w-[100%] px-[16px]">
+                <button
+                    class="font-satoshimedium text-[14px] md:text-[16px]  rounded-[62px] w-[100%] md:w-max border-[1.9px] border-black/10">
+                    <span class="text-primary">
+                        <a href="../../pages/categorypage/category.html"
+                            class="px-[54px] py-[16px] md:py-[15px] md:px-[80px] block"> View All</a>
+                    </span>
+                </button>
+            </div>
+        </section>
+
+        <!-- top selling -->
+        <section class="pb-[50px] lg:pb-[80px] text-center">
+            <div class="px-[16px] md:px-[50px] 2xl:px-[100px]">
+                <div
+                    class="mb-[32px] md:mb-[40px] lg:mb-[55px] pt-[40px] md:pt-[50px] lg:pt-[64px] border-t-[1px] border-black/10">
+                    <h1 class="uppercase font-integral text-[32px]  md:text-[30px] lg:text-[48px] 2xl:text-[48px]">
+                        Top Selling
+                    </h1>
+                </div>
+            </div>
+            <div class="swiper_topselling mb-[24px] md:mb-[36px] md:px-[20px] lg:px-[50px] 2xl:px-[100px]">
+                <script>
+                    fetch("../../components/swiper.html")
+                        .then(response => response.text())
+                        .then(data => {
+                            var swiper_arrivals = document.querySelector(".swiper_topselling");
+                            swiper_arrivals.innerHTML = data;
+                        })
+                </script>
+                <script src="../../components/componentsJs/primaryproductswiper.js"></script>
+            </div>
+            <div class="w-[100%] px-[16px]">
+                <button
+                    class="font-satoshimedium text-[14px] md:text-[16px]  border-[1px] border-[#e4e4e4] rounded-[62px] w-[100%] md:w-max"><span
+                        class="text-primary opacity-[100]"> <a href="../../pages/categorypage/category.html"
+                            class="px-[54px] py-[16px] md:py-[15px] md:px-[80px] block"> View All</a>
+                    </span>
+                </button>
+            </div>
+        </section>
+        <!-- grid section -->
+        <section class="grid_sectionmb-[50px] px-[16px] mb-[50px] lg:px-[50px] 2xl:px-[100px]">
+            <div class=" bg-bggray rounded-[20px] px-[16px] pt-[40px] pb-[27px] ">
+                <div class="mb-[28px] md:mb-[58px] lg:mb-[64px] text-center">
+                    <h1
+                        class="uppercase font-integral text-[32px] md:text-[30px] lg:text-[48px] text-bold leading-[36px] text-[#000000]">
+                        BROWSE BY dress STYLE
+                    </h1>
+                </div>
+                <div class="xs:flex  flex-wrap gap-[20px] ">
+                    <div class="mb-[16px] md:mb-[0px]  relative top-0 flex-1/5">
+                        <img src="../../assets/images/image 11.png" alt=""
+                            class="w-[100%] h-[207px] rounded-[20px] md:hidden">
+                        <img src="../../assets/images/image11big.png" alt=""
+                            class="w-[100%] h-[207px] lg:h-[250px] 2xl:h-[240px] rounded-[20px] hidden md:flex">
+                        <span class="absolute top-[16px] left-[24px]">
+                            <p class="font-satoshibold text-[24px]">Casual</p>
+                        </span>
+                    </div>
+                    <div class="mb-[16px] md:mb-[0px] relative top-0 flex-1/2">
+                        <img src="../../assets/images/image 12.png" alt=""
+                            class="w-[100%] h-[207px] rounded-[20px] md:hidden">
+                        <img src="../../assets/images/image12big.png" alt=""
+                            class="w-[100%] h-[207px] lg:h-[250px] 2xl:h-[240px] rounded-[20px] hidden md:flex">
+                        <span class="absolute top-[16px] left-[24px]">
+                            <p class="font-satoshibold text-[24px]">Formal</p>
+                        </span>
+                    </div>
+                    <div class="mb-[16px]  md:mb-[0px] relative top-0  flex-1/2">
+                        <img src="../../assets/images/image 13.png" alt=""
+                            class="w-[100%] h-[207px] rounded-[20px] md:hidden">
+                        <img src="../../assets/images/image13big.png" alt=""
+                            class="w-[100%] h-[207px] lg:h-[250px] 2xl:h-[240px] rounded-[20px] hidden md:flex">
+                        <span class="absolute top-[16px] left-[24px]">
+                            <p class="font-satoshibold text-[24px]">Party</p>
+                        </span>
+                    </div>
+                    <div class="relative top-0 flex-1/5">
+                        <img src="../../assets/images/image 14.png" alt=""
+                            class="w-[100%] h-[207px] rounded-[20px] md:hidden">
+                        <img src="../../assets/images/image14big.png" alt=""
+                            class="w-[100%] h-[207px] lg:h-[250px] 2xl:h-[240px] rounded-[20px] hidden md:flex">
+                        <span class="absolute top-[16px] left-[24px]">
+                            <p class="font-satoshibold text-[24px]">Gym</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- reviews -->
+        <section class="reviews_section">
+
+            <script>
+                fetch('../../components/reviewslider.html')
+                    .then(res => res.text())
+                    .then(data => {
+                        // console.log(data);
+                        let reviewSection = document.querySelector(".reviews_section");
+                        reviewSection.innerHTML = data;
+                        setTimeout(() => {
+                            var swiper = new Swiper(".reviewSwiper", {
+                                navigation: {
+                                    nextEl: ".swiper-button-next",
+                                    prevEl: ".swiper-button-prev",
+                                },
+                                breakpoints: {
+                                    325: {
+                                        slidesPerView: 'auto',
+                                        spaceBetween: 20,
+                                    },
+                                    425: {
+                                        slidesPerView: 1,
+                                        // spaceBetween: 20,
+                                    },
+                                    475: {
+                                        slidesPerView: 'auto',
+                                        spaceBetween: 20,
+                                    },
+                                    606: {
+                                        slidesPerView: 'auto',
+                                        spaceBetween: 20,
+                                    },
+                                    768: {
+                                        slidesPerView: 'auto',
+                                        spaceBetween: 20,
+                                    },
+                                    1024: {
+                                        slidesPerView: 'auto',
+                                        spaceBetween: 0,
+                                    },
+
+                                }
+                            });
+
+                            var script = document.createElement('script');
+                            script.src = '../../components/componentsJs/reviewslider.js';
+                            document.body.appendChild(script);
+                        }, 100);
+                    })
+
+            </script>
+
+
+
+        </section>
+
+        <!-- footer -->
+        <footer class="footer bg-bggray lg:px-[50px] 2xl:px-[100px]">
+            <script>
+                fetch("../../components/footer.html")
+                    .then(res => res.text())
+                    .then(data => {
+                        var footer_section = document.querySelector(".footer");
+                        footer_section.innerHTML = data;
+                    })
+            </script>
+
+        </footer>
+        <script src="../../assets/swiper-11.2.8/package/swiper-bundle.min.js"></script>
+
+
+    </div>
+</body>
+
+</html>

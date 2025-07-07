@@ -1,0 +1,19 @@
+{
+  "announcements": [
+    {
+      "id": 1,
+      "text": "Sign up and get 20% off to your first order.",
+      "visible": true
+    },
+    {
+      "id": 2,
+      "text": "New arrivals dropped — check out!",
+      "visible": true
+    },
+    {
+      "id": 3,
+      "text": "Limited time offer: Get 20% off sitewide!",
+      "visible": false
+    }
+  ]
+}

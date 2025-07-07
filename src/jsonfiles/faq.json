@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "question": "How can I track my order?",
+    "answer": "You can track your order using the tracking number provided in your confirmation email."
+  },
+  {
+    "id": 2,
+    "question": "What payment methods do you accept?",
+    "answer": "We accept credit cards, debit cards, UPI, net banking, and popular wallets like Paytm and PhonePe."
+  },
+  {
+    "id": 3,
+    "question": "Can I cancel my order after placing it?",
+    "answer": "Yes, you can cancel your order within 1 hour of placing it from your account dashboard."
+  },
+  {
+    "id": 4,
+    "question": "How long does delivery take?",
+    "answer": "Standard delivery usually takes 3–7 business days depending on your location."
+  },
+  {
+    "id": 5,
+    "question": "Do you offer international shipping?",
+    "answer": "Yes, we offer international shipping to selected countries with additional charges."
+  },
+  {
+    "id": 6,
+    "question": "How do I return a product?",
+    "answer": "To return a product, go to your orders page and click on the return option for that item."
+  },
+  {
+    "id": 7,
+    "question": "When will I get my refund?",
+    "answer": "Refunds are processed within 5–7 business days after we receive the returned item."
+  },
+  {
+    "id": 8,
+    "question": "Is it safe to shop on your website?",
+    "answer": "Yes, our website uses SSL encryption and secure payment gateways for safe transactions."
+  },
+  {
+    "id": 9,
+    "question": "Can I change my delivery address after ordering?",
+    "answer": "You can change your address within 30 minutes of placing the order by contacting support."
+  },
+  {
+    "id": 10,
+    "question": "What should I do if I receive a damaged product?",
+    "answer": "Please contact our support with photos of the product, and we will assist with a replacement."
+  },
+  {
+    "id": 11,
+    "question": "Do you offer Cash on Delivery (COD)?",
+    "answer": "Yes, Cash on Delivery is available on selected products and pin codes."
+  },
+  {
+    "id": 12,
+    "question": "How can I apply a discount code?",
+    "answer": "You can enter your discount code at checkout before completing your payment."
+  },
+  {
+    "id": 13,
+    "question": "Can I buy without creating an account?",
+    "answer": "Guest checkout is available, but creating an account helps you track orders and returns easily."
+  },
+  {
+    "id": 14,
+    "question": "What is your exchange policy?",
+    "answer": "Exchanges are allowed within 7 days for unused items with original tags and packaging."
+  },
+  {
+    "id": 15,
+    "question": "Are all products original?",
+    "answer": "Yes, we only sell 100% genuine and brand-authorized products on our platform."
+  },
+  {
+    "id": 16,
+    "question": "Will I receive an invoice?",
+    "answer": "Yes, an invoice is sent to your email and is also available in your account order history."
+  },
+  {
+    "id": 17,
+    "question": "How do I contact customer support?",
+    "answer": "You can reach our support team via chat, email, or phone from the Help section."
+  },
+  {
+    "id": 18,
+    "question": "Do you offer bulk purchase discounts?",
+    "answer": "Yes, we offer discounts for bulk orders. Please contact sales for custom quotes."
+  },
+  {
+    "id": 19,
+    "question": "What happens if I miss the delivery?",
+    "answer": "Our courier will attempt redelivery. You can also reschedule through the tracking link."
+  },
+  {
+    "id": 20,
+    "question": "How can I check product availability?",
+    "answer": "Product availability is shown on the product page and updates in real time based on stock."
+  }
+]

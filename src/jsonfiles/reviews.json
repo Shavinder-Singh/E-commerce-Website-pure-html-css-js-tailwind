@@ -1,0 +1,74 @@
+{
+  "reviews": [
+    {
+      "id": 1,
+      "user": "Aarav Mehta",
+      "rating": 5,
+      "date": "2025-06-01",
+      "review": "Absolutely blown away by the quality. Everything arrived perfectly packed. The delivery was fast and hassle-free. Customer support handled my queries politely. Will definitely recommend this store to others."
+    },
+    {
+      "id": 2,
+      "user": "Priya Sharma",
+      "rating": 4,
+      "date": "2025-06-02",
+      "review": "I was very impressed with the design. It matched exactly with the website preview. Product quality is worth every penny. Service team was quick to respond. Overall, a great shopping experience."
+    },
+    {
+      "id": 3,
+      "user": "Kabir Verma",
+      "rating": 3,
+      "date": "2025-06-03",
+      "review": "The product was decent but not exceptional. Packaging could be improved a bit. It works fine for now though. Delivery was on time, which I appreciated. Hoping for better next time."
+    },
+    {
+      "id": 4,
+      "user": "Sanya Kapoor",
+      "rating": 5,
+      "date": "2025-06-04",
+      "review": "Loved the smooth shopping process. Everything went exactly as promised. The interface was user-friendly too. I felt like a valued customer throughout. Would definitely order again soon."
+    },
+    {
+      "id": 5,
+      "user": "Dev Patel",
+      "rating": 2,
+      "date": "2025-06-05",
+      "review": "The product didn’t fully meet expectations. There were small defects visible. Support took some time to reply. Delivery was a bit delayed as well. Needs improvement on a few fronts."
+    },
+    {
+      "id": 6,
+      "user": "Meera Joshi",
+      "rating": 4,
+      "date": "2025-06-06",
+      "review": "A solid experience from start to finish. Everything felt smooth and easy. The colors were vibrant and exact. I appreciated the quick delivery time. Will consider buying again soon."
+    },
+    {
+      "id": 7,
+      "user": "Rohan Singh",
+      "rating": 5,
+      "date": "2025-06-07",
+      "review": "Excellent service and top-notch quality. The app made ordering super simple. I got constant updates on the shipment. Customer support was polite and fast. I’ll shop from here again for sure."
+    },
+    {
+      "id": 8,
+      "user": "Naina Desai",
+      "rating": 1,
+      "date": "2025-06-08",
+      "review": "The item arrived damaged unfortunately. I reached out but got no clear help. Really disappointed with the response time. Felt ignored as a customer. Won’t be coming back soon."
+    },
+    {
+      "id": 9,
+      "user": "Tanishq Rana",
+      "rating": 3,
+      "date": "2025-06-09",
+      "review": "Good but not great overall. Product worked but felt overpriced. Packaging lacked proper protection. Delivery speed was okay though. Could improve user guidance too."
+    },
+    {
+      "id": 10,
+      "user": "Isha Bedi",
+      "rating": 4,
+      "date": "2025-06-10",
+      "review": "Product was packed beautifully and arrived fast. Design is sleek and elegant. I liked the attention to detail. The support team solved my issue instantly. A very positive experience overall."
+    }
+  ]
+}

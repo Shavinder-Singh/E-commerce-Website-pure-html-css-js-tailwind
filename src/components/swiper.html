@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="../../assets/swiper-11.2.8/package/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../output.css">
+
+    <style>
+        .swiper {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper_slide_primary_products {
+            /* margin-right: 16px !important; */
+        }
+
+        @media(min-width:1024px) {
+            .swiper_slide_primary_products {
+                /* margin-right: 20px !important; */
+            }
+        }
+
+        .mySwiper {
+            padding-left: 16px !important;
+            /* height: 420px; */
+        }
+
+        @media(min-width:768px) {
+            .mySwiper {
+                /* padding-right: 100px !important; */
+            }
+        }
+
+        .swiper-wrapper {
+            /* padding-left: 16px !important; */
+            /* display: flex; */
+            /* gap: 16px; */
+        }
+
+        @media(min-width:768px) {
+            .swiper-wrapper {
+                /* padding-left: 16px !important; */
+                /* gap: 20px; */
+
+            }
+
+            .mySwiper {
+                padding-left: 0px !important;
+                /* height: 420px; */
+            }
+        }
+
+
+
+        .swiper-slide {
+            width: 198px !important;
+            height: 60% !important;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media (min-width:1024px) {
+            .swiper-slide {
+                width: 23.7% !important;
+                height: 40% !important;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .mySwiper {
+                /* padding: 10px 50px; */
+            }
+
+            .swiper-wrapper {
+                /* padding: 10px 50px; */
+            }
+        }
+
+        .swiper-pagination {
+            /* display: none; */
+        }
+
+        .swiper_slide_box {
+            /* width: 200px; */
+        }
+
+        .mySwiper .swiper-pagination {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Swiper -->
+
+    <div class="swiper mySwiper ">
+        <div class="swiper-wrapper primary_swiper_wrapper ">
+            <!--  -->
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+
+    <!-- Swiper JS -->
+    <script src="../../assets/swiper-11.2.8/package/swiper-bundle.min.js"></script>
+
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 2,
+            grid: {
+                // rows: 2,
+            },
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 'auto',
+                    spaceBetween: 16,
+                },
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 250,
+                },
+                
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+[
+  {
+    "id": 1,
+    "title": "Brown Pant Pant",
+    "price": 110,
+    "description": "A plain white t-shirt for everyday wear",
+    "category": "cotton shorts",
+    "image": "../../assets/images/product image/firstimage.png",
+    "image2": "../../assets/images/productb3.png",
+    "image3": "../../assets/images/productb1.png",
+    "rating": 2.6,
+    "warranty": "2 Years",
+    "discount": 10,
+    "colors": {
+      "primary": "orange"
+    },
+    "dress_style": [
+      "formal"
+    ],
+    "brand_names": [
+      "brown pant",
+      "Formal Shirt",
+      "Skinny Fit Jeans"
+    ],
+    "sizes": [
+      "medium",
+      "large",
+      "3x-large"
+    ],
+    "origin": "India"
+  },
+
+  {
+    "id": 5,
+    "title": "pant pant",
+    "price": 75,
+    "description": "Comfortable relaxed-fit jeans for everyday wear.",
+    "category": "pants",
+    "image": "../../assets/images/product image/jeans_relaxed.png",
+    "image2": "../../assets/images/product image/jeans_relaxed_b.png",
+    "image3": "../../assets/images/product image/jeans_relaxed_c.png",
+    "rating": 4.3,
+    "warranty": "2 Years",
+    "discount": 15,
+    "colors": {
+      "primary": "blue"
+    },
+    "dress_style": [
+      "casual"
+    ],
+    "brand_names": [
+      "DenimDreams",
+      "ComfortPants"
+    ],
+    "sizes": [
+      "medium",
+      "large",
+      "xlarge",
+      "2x-large"
+    ],
+    "origin": "Pakistan"
+  }
+]

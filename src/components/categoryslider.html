@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="../assets/swiper-11.2.8/package/swiper-bundle.min.css" />
+
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      /* position: relative; */
+      /* height: 100%; */
+    }
+
+    body {
+      /* background: #000; */
+      /* font-family: Helvetica Neue, Helvetica, Arial, sans-serif; */
+      /* font-size: 14px; */
+      /* color: #fff; */
+      /* margin: 0; */
+      /* padding: 0; */
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .swiper-slide {
+      /* height: max-content !important; */
+      /* width: max-content !important; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-wrapper {
+      width: 100%;
+    }
+
+    .swiper-slide .swiper_slide_box {
+      /* width: 100% !important; */
+      /* height: 100%; */
+    }
+
+    @media(min-width:320px) and (max-width:375px) {
+      .swiper {
+        width: 100%;
+      }
+
+      .swiper-wrapper {
+        /* width: 100%; */
+      }
+
+      .swiper-slide .swiper_slide_box {
+        /* width: 100% !important; */
+        /* height: 100%; */
+      }
+
+      .swiper_slide_box img {
+        /* width: 100%; */
+        /* height: 100%; */
+      }
+
+      .showing_size {
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Swiper -->
+  <div class="md:w-[100%]">
+    <div class="flex justify-between items-center w-[100%] pb-[29px] md:pb-[25px]">
+      <div class="flex items-end md:items-center md:justify-between  gap-[8px] w-[100%]">
+        <div class="font-satoshibold text-[24px] md:text-[32px]  text-[#000000] opacity-100">Casual</div>
+        <div
+          class="showing_size text-[14px] truncate md:text-[15px] lg:text-[16px] font-satoshiregular text-[#000000] opacity-[60%] mb-[-2px] relative top-[-6px] md:hidden">
+          <span class="count_products_category_page"></span>
+        </div>
+        <div class="flex items-center gap-[12px]">
+          <div
+            class="font-satoshi text-[16px] text-[#000000] opacity-[60%] hidden md:flex truncate md:text-[15px] lg:text-[16px]">
+            <span class="count_products_category_page_laptop"> </span>
+          </div>
+          <div class="hidden md:flex items-center">
+            <span
+              class="font-satoshi text-[16px] text-[#000000] opacity-[60%] mr-[12px] truncate md:text-[15px] lg:text-[16px]">Sort
+              by:</span>
+            <span
+              class="font-satoshi text-[16px] text-[#000000] font-semibold opacity-[100%] mr-[4px] truncate md:text-[15px] lg:text-[16px]">Most
+              Popular</span>
+            <span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13.5306 6.53063L8.5306 11.5306C8.46092 11.6005 8.37813 11.656 8.28696 11.6939C8.1958 11.7317 8.09806 11.7512 7.99935 11.7512C7.90064 11.7512 7.8029 11.7317 7.71173 11.6939C7.62057 11.656 7.53778 11.6005 7.4681 11.5306L2.4681 6.53063C2.3272 6.38973 2.24805 6.19864 2.24805 5.99938C2.24805 5.80012 2.3272 5.60902 2.4681 5.46813C2.60899 5.32723 2.80009 5.24808 2.99935 5.24808C3.19861 5.24808 3.3897 5.32723 3.5306 5.46813L7.99997 9.9375L12.4693 5.4675C12.6102 5.32661 12.8013 5.24745 13.0006 5.24745C13.1999 5.24745 13.391 5.32661 13.5318 5.4675C13.6727 5.6084 13.7519 5.7995 13.7519 5.99875C13.7519 6.19801 13.6727 6.38911 13.5318 6.53L13.5306 6.53063Z"
+                  fill="black" />
+              </svg>
+            </span>
+          </div>
+
+        </div>
+      </div>
+     
+      <div class="md:hidden" >
+        <span class="filter_open_btn ">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="32" height="32" rx="16" fill="#F0F0F0" />
+            <path
+              d="M16.75 15.75V21.5C16.75 21.6989 16.671 21.8897 16.5303 22.0303C16.3897 22.171 16.1989 22.25 16 22.25C15.8011 22.25 15.6103 22.171 15.4697 22.0303C15.329 21.8897 15.25 21.6989 15.25 21.5V15.75C15.25 15.5511 15.329 15.3603 15.4697 15.2197C15.6103 15.079 15.8011 15 16 15C16.1989 15 16.3897 15.079 16.5303 15.2197C16.671 15.3603 16.75 15.5511 16.75 15.75ZM20.5 20C20.3011 20 20.1103 20.079 19.9697 20.2197C19.829 20.3603 19.75 20.5511 19.75 20.75V21.5C19.75 21.6989 19.829 21.8897 19.9697 22.0303C20.1103 22.171 20.3011 22.25 20.5 22.25C20.6989 22.25 20.8897 22.171 21.0303 22.0303C21.171 21.8897 21.25 21.6989 21.25 21.5V20.75C21.25 20.5511 21.171 20.3603 21.0303 20.2197C20.8897 20.079 20.6989 20 20.5 20ZM22 17.5H21.25V10.5C21.25 10.3011 21.171 10.1103 21.0303 9.96967C20.8897 9.82902 20.6989 9.75 20.5 9.75C20.3011 9.75 20.1103 9.82902 19.9697 9.96967C19.829 10.1103 19.75 10.3011 19.75 10.5V17.5H19C18.8011 17.5 18.6103 17.579 18.4697 17.7197C18.329 17.8603 18.25 18.0511 18.25 18.25C18.25 18.4489 18.329 18.6397 18.4697 18.7803C18.6103 18.921 18.8011 19 19 19H22C22.1989 19 22.3897 18.921 22.5303 18.7803C22.671 18.6397 22.75 18.4489 22.75 18.25C22.75 18.0511 22.671 17.8603 22.5303 17.7197C22.3897 17.579 22.1989 17.5 22 17.5ZM11.5 18C11.3011 18 11.1103 18.079 10.9697 18.2197C10.829 18.3603 10.75 18.5511 10.75 18.75V21.5C10.75 21.6989 10.829 21.8897 10.9697 22.0303C11.1103 22.171 11.3011 22.25 11.5 22.25C11.6989 22.25 11.8897 22.171 12.0303 22.0303C12.171 21.8897 12.25 21.6989 12.25 21.5V18.75C12.25 18.5511 12.171 18.3603 12.0303 18.2197C11.8897 18.079 11.6989 18 11.5 18ZM13 15.5H12.25V10.5C12.25 10.3011 12.171 10.1103 12.0303 9.96967C11.8897 9.82902 11.6989 9.75 11.5 9.75C11.3011 9.75 11.1103 9.82902 10.9697 9.96967C10.829 10.1103 10.75 10.3011 10.75 10.5V15.5H10C9.80109 15.5 9.61032 15.579 9.46967 15.7197C9.32902 15.8603 9.25 16.0511 9.25 16.25C9.25 16.4489 9.32902 16.6397 9.46967 16.7803C9.61032 16.921 9.80109 17 10 17H13C13.1989 17 13.3897 16.921 13.5303 16.7803C13.671 16.6397 13.75 16.4489 13.75 16.25C13.75 16.0511 13.671 15.8603 13.5303 15.7197C13.3897 15.579 13.1989 15.5 13 15.5ZM17.5 12.5H16.75V10.5C16.75 10.3011 16.671 10.1103 16.5303 9.96967C16.3897 9.82902 16.1989 9.75 16 9.75C15.8011 9.75 15.6103 9.82902 15.4697 9.96967C15.329 10.1103 15.25 10.3011 15.25 10.5V12.5H14.5C14.3011 12.5 14.1103 12.579 13.9697 12.7197C13.829 12.8603 13.75 13.0511 13.75 13.25C13.75 13.4489 13.829 13.6397 13.9697 13.7803C14.1103 13.921 14.3011 14 14.5 14H17.5C17.6989 14 17.8897 13.921 18.0303 13.7803C18.171 13.6397 18.25 13.4489 18.25 13.25C18.25 13.0511 18.171 12.8603 18.0303 12.7197C17.8897 12.579 17.6989 12.5 17.5 12.5Z"
+              fill="black" />
+          </svg>
+
+        </span>
+      </div>
+    </div>
+
+    <div
+      class="category_swiper justify-between gap-[20px] pb-[24px] grid grid-cols-2 lg:grid-cols-3 border-b-[1px] border-black/10">
+
+    </div>
+    <div class="w-[100%] px-[16px] flex justify-center mt-[16px]">
+      <button
+        class="show_morebtn_categoriespage font-satoshimedium text-[14px] md:text-[16px] px-[54px] py-[16px] md:py-[15px] md:px-[80px] rounded-[62px] w-[100%] md:w-max border-[1.9px] border-black/10">
+        <span class="text-primary">
+          Show More
+        </span>
+      </button>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+{
+  "announcements": [
+    {
+      "id": 1,
+      "text": "Free shipping on orders over ₹999!",
+      "visible": true
+    },
+    {
+      "id": 2,
+      "text": "New arrivals dropped — check out!",
+      "visible": true
+    },
+    {
+      "id": 3,
+      "text": "Limited time offer: Get 20% off sitewide!",
+      "visible": false
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+@media(min-width:425px) and (max-width:475px) {
+    .reviews_box_homepage {
+        height: 190px;
+    }
+
+}
+
+
+
+@media(min-width:475px) and (max-width:768px) {
+    .review_homepage_box {
+        height: 210px !important;
+
+        overflow: hidden;
+
+    }
+
+}
+
+@media(min-width:768px) and (max-width:1024px) {
+    .review_homepage_box {
+        height: 250px !important;
+
+        overflow: hidden;
+
+    }
+}
+
+@media(min-width:1024px) and (max-width:1280px) {
+    .review_homepage_box {
+        height: 240px !important;
+        margin-right: 20px  ;
+        overflow: hidden;
+
+    }
+
+}
+@media(min-width:1280px) and (max-width:1440px) {
+    .review_homepage_box {
+        height: 240px !important;
+        margin-right: 20px  ;
+        overflow: hidden;
+
+    }
+
+}
+
+.reviewSwiperHomepage {
+    padding: 16px !important;
+}
+
+@media(min-width:1024px) and (max-width:1440px) {
+    .reviewSwiperHomepage {
+        padding: 50px !important;
+    }
+
+}
+
+@media(min-width:1440px) {
+    .reviewSwiperHomepage {
+        padding: 100px !important;
+    }
+
+}

@@ -1,0 +1,1416 @@
+[
+  {
+    "id": 1,
+    "title": "Brown Pant",
+    "price": 110,
+    "description": "A plain white t-shirt for everyday wear",
+    "category": "Round Neck T-shirt",
+    "image": "../../assets/images/product image/firstimage.png",
+    "image2": "../../assets/images/productb3.png",
+    "image3": "../../assets/images/productb1.png",
+    "rating": 2.6,
+    "warranty": "2 Years",
+    "discount": 10,
+    "colors": {
+      "primary": "orange"
+    },
+    "dress_style": [
+      "formal"
+    ],
+    "brand_names": [
+      "brown pant",
+      "Formal Shirt",
+      "Skinny Fit Jeans"
+    ],
+    "sizes": [
+      "medium",
+      "large",
+      "3x-large"
+    ],
+    "origin": "India"
+  },
+  {
+    "id": 21,
+    "title": "Axel T-shirt",
+    "price": 10000,
+    "description": "Slim fit blue denim jeans for everyday style",
+    "category": "Royal Dress",
+    "image": "../../assets/images/product image/thirdimage.png",
+    "image2": "../../assets/images/productb2.png",
+    "image3": "../../assets/images/productb3.png",
+    "rating": 4.1,
+    "warranty": "1 Year",
+    "discount": 0,
+    "colors": {
+      "primary": "blue"
+    },
+    "dress_style": [
+      "",
+      "streetwear"
+    ],
+    "brand_names": [
+      "Round Neck T-shirt",
+      "Denim Pro"
+    ],
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "origin": "India"
+  },
+  {
+    "id": 3,
+    "title": "Zyra Hoodie",
+    "price": 299,
+    "description": "Printed cotton hoodie perfect for winters",
+    "category": "Trackking",
+    "image": "../../assets/images/product image/fourthimage.png",
+    "image2": "../../assets/images/productb2.png",
+    "image3": "../../assets/images/productb3.png",
+    "rating": 3.9,
+    "warranty": "6 Months",
+    "discount": 20,
+    "colors": {
+      "primary": "black"
+    },
+    "dress_style": [
+      "sportswear",
+      "casual"
+    ],
+    "brand_names": [
+      "Royal Dress",
+      "Street King"
+    ],
+    "sizes": [
+      "medium",
+      "extra large"
+    ],
+    "origin": "India"
+  },
+  {
+    "id": 4,
+    "title": "Beach Dress",
+    "price": 99,
+    "description": "Floral summer dress with vibrant colors",
+    "category": "Tailored Dress",
+    "image": "../../assets/images/product image/fifthimage.png",
+    "image2": "../../assets/images/primaryimage.png",
+    "image3": "../../assets/images/productb1.png",
+    "rating": 4.3,
+    "warranty": "1 Year",
+    "discount": 15,
+    "colors": {
+      "primary": "yellow"
+    },
+    "dress_style": [
+      "beach dress",
+      "party"
+    ],
+    "brand_names": [
+      "Forever Fashion",
+      "Summer Vibe"
+    ],
+    "sizes": [
+      "small",
+      "medium"
+    ],
+    "origin": "India"
+  },
+  {
+    "id": 5,
+    "title": "Leo Trackpants",
+    "price": 999,
+    "description": "Comfortable cotton trackpants for workouts",
+    "category": "brown pant",
+    "image": "../../assets/images/product image/sixthimage.webp",
+    "image2": "../../assets/images/productb2.png",
+    "image3": "../../assets/images/productb1.png",
+    "rating": 3.5,
+    "warranty": "1 Year",
+    "discount": 5,
+    "colors": {
+      "primary": "grey",
+      "secondary": "pink"
+    },
+    "dress_style": [
+      "sportswear"
+    ],
+    "brand_names": [
+      "FitWear",
+      "Pro Track"
+    ],
+    "sizes": [
+      "medium",
+      "large"
+    ],
+    "origin": "India"
+  },
+  {
+    "id": 6,
+    "title": "Black Cargo",
+    "price": 1499,
+    "description": "Traditional kurti with modern touch",
+    "category": "kurti",
+    "image": "../../assets/images/product image/seventhimage.png",
+    "image2": "../../assets/images/productb2.png",
+    "image3": "../../assets/images/primaryimage.png",
+    "rating": 4.6,
+    "warranty": "2 Years",
+    "discount": 30,
+    "colors": {
+      "primary": "pink"
+    },
+    "dress_style": [
+      "ethnic",
+      "casual"
+    ],
+    "brand_names": [
+      "Asthetic Pant",
+      "Bluish Pant"
+    ],
+    "sizes": [
+      "medium",
+      "large",
+      "extra large"
+    ],
+    "origin": "India"
+  },
+  {
+    "id": 7,
+    "title": "Aron Jacket",
+    "price": 3599,
+    "description": "Winter-ready thick jacket with lining",
+    "category": "jacket",
+    "image": "../../assets/images/product image/eightimage.png",
+    "image2": "../../assets/images/productb1.png",
+    "image3": "../../assets/images/productb2.png",
+    "rating": 4.0,
+    "warranty": "3 Years",
+    "colors": {
+      "primary": "green"
+    },
+    "dress_style": [
+      "casual",
+      "winterwear"
+    ],
+    "brand_names": [
+      "NorthLayer",
+      "Wind Breaker"
+    ],
+    "sizes": [
+      "large",
+      "extra large"
+    ],
+    "origin": "India"
+  },
+  {
+    "id": 8,
+    "title": "Bluish Pant",
+    "price": 2199,
+    "description": "Formal trousers with clean stitch detailing",
+    "category": "trousers",
+    "image": "../../assets/images/product image/ninthimage.png",
+    "image2": "../../assets/images/productb2.png",
+    "image3": "../../assets/images/productb3.png",
+    "rating": 3.8,
+    "warranty": "1 Year",
+    "colors": {
+      "primary": "navy"
+    },
+    "dress_style": [
+      ""
+    ],
+    "brand_names": [
+      "Bluish Pant",
+      "Smart Wear"
+    ],
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "origin": "India"
+  },
+  {
+    "id": 9,
+    "title": "Evo Activewear",
+    "price": 699,
+    "description": "Sweat-resistant t-shirt for gym and running",
+    "category": "sportswear",
+    "image": "../../assets/images/product image/tenthimage.png",
+    "image2": "../../assets/images/primaryimage.png",
+    "image3": "../../assets/images/productb3.png",
+    "rating": 4.4,
+    "warranty": "6 Months",
+    "discount": 0,
+    "colors": {
+      "primary": "red"
+    },
+    "dress_style": [
+      "sportswear"
+    ],
+    "brand_names": [
+      "evo activewear",
+      "Run Pro"
+    ],
+    "sizes": [
+      "medium",
+      "large"
+    ],
+    "origin": "India"
+  },
+  {
+    "id": 10,
+    "title": "Triple G's Gown",
+    "price": 4999,
+    "description": "An elegant gown for wedding functions",
+    "category": "gown",
+    "image": "../../assets/images/product image/eleventhimage.png",
+    "image2": "../../assets/images/productb2.png",
+    "image3": "../../assets/images/productb1.png",
+    "rating": 4.9,
+    "warranty": "2 Years",
+    "discount": 35,
+    "colors": {
+      "primary": "maroon"
+    },
+    "dress_style": [
+      "party",
+      "Professional"
+    ],
+    "brand_names": [
+      "Elegant Diva",
+      "Cinderella"
+    ],
+    "sizes": [
+      "medium",
+      "extra large"
+    ],
+    "origin": "India"
+  },
+  {
+    "id": 11,
+    "title": "Milo Shorts",
+    "price": 499,
+    "description": "Cotton shorts for daily lounging or walking",
+    "category": "shorts",
+    "image": "../../assets/images/product image/twelevthimage.png",
+    "image2": "../../assets/images/productb3.png",
+    "image3": "../../assets/images/primaryimage.png",
+    "rating": 3.2,
+    "warranty": "1 Year",
+    "discount": 5,
+    "colors": {
+      "primary": "khaki"
+    },
+    "dress_style": [
+      "casual",
+      "minimal",
+      "Wedding"
+    ],
+    "brand_names": [
+      "Basic Wear",
+      "Chill Mode"
+    ],
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "origin": "India"
+  },
+  {
+    "id": 12,
+    "title": "Vega Leggings",
+    "price": 899,
+    "description": "Flexible leggings suitable for yoga and running",
+    "category": "leggings",
+    "image": "../../assets/images/product image/13image.png",
+    "image2": "../../assets/images/productb3.png",
+    "image3": "../../assets/images/productb2.png",
+    "rating": 4.1,
+    "warranty": "6 Months",
+    "discount": 0,
+    "colors": {
+      "primary": "black"
+    },
+    "dress_style": [
+      "sportswear"
+    ],
+    "brand_names": [
+      "StretchX",
+      "Yoga Life"
+    ],
+    "sizes": [
+      "medium",
+      "large",
+      "extra large"
+    ],
+    "origin": "India"
+  },
+  {
+    "id": 13,
+    "title": "Tina Skirt",
+    "price": 1599,
+    "description": "Pleated short skirt for a cute, casual vibe",
+    "category": "skirt",
+    "image": "../../assets/images/product image/14image.png",
+    "image2": "../../assets/images/productb1.png",
+    "image3": "../../assets/images/primaryimage.png",
+    "rating": 4.0,
+    "warranty": "1 Year",
+    "discount": 20,
+    "colors": {
+      "primary": "white"
+    },
+    "dress_style": [
+      "casual",
+      "party"
+    ],
+    "brand_names": [
+      "Trendy Wear",
+      "Skirty "
+    ],
+    "sizes": [
+      "small",
+      "medium"
+    ],
+    "origin": "India"
+  },
+  {
+    "id": 14,
+    "title": "Neon Tank Top",
+    "price": 349,
+    "description": "Neon-colored tank top made of breathable fabric",
+    "category": "tank top",
+    "image": "../../assets/images/product image/16image.png",
+    "image2": "../../assets/images/productb3.png",
+    "image3": "../../assets/images/productb2.png",
+    "rating": 3.6,
+    "warranty": "1 Year",
+    "discount": 0,
+    "colors": {
+      "primary": "neon green"
+    },
+    "dress_style": [
+      "casual",
+      "sportswear"
+    ],
+    "brand_names": [
+      "GlowFit",
+      "Summer Punch"
+    ],
+    "sizes": [
+      "small",
+      "medium"
+    ],
+    "origin": "India"
+  },
+  {
+    "id": 15,
+    "title": "Arctic Winter Coat",
+    "price": 7499,
+    "description": "Heavy-duty coat for harsh winter climates",
+    "category": "coat",
+    "image": "../../assets/images/product image/17image.png",
+    "image2": "../../assets/images/productb3.png",
+    "image3": "../../assets/images/primaryimage.png",
+    "rating": 4.7,
+    "warranty": "5 Years",
+    "discount": 50,
+    "colors": {
+      "primary": "navy blue",
+      "secondary": "red"
+    },
+    "dress_style": [
+      "winterwear",
+      "Professional"
+    ],
+    "brand_names": [
+      "ArcticPro",
+      "Snow Defender"
+    ],
+    "sizes": [
+      "large",
+      "extra large",
+      "xx-large"
+    ],
+    "origin": "India"
+  },
+  {
+    "id": 16,
+    "title": "Basic Polo",
+    "price": 1099,
+    "description": "Collared polo t-shirt for office casuals",
+    "category": "t-shirt",
+    "image": "../../assets/images/product image/18image.png",
+    "image2": "../../assets/images/productb2.png",
+    "image3": "../../assets/images/productb3.png",
+    "rating": 4.2,
+    "warranty": "2 Years",
+    "discount": 10,
+    "colors": {
+      "primary": "sky blue"
+    },
+    "dress_style": [
+      "loungewear",
+      "casual"
+    ],
+    "brand_names": [
+      "Polowear",
+      "Basic Club"
+    ],
+    "sizes": [
+      "medium",
+      "large"
+    ],
+    "origin": "India"
+  },
+  {
+    "id": 17,
+    "title": "haloween dress",
+    "price": 9999,
+    "description": "Luxury sherwani for Indian weddings",
+    "category": "Haloween Things",
+    "image": "../../assets/images/product image/19image.png",
+    "image2": "../../assets/images/productb3.png",
+    "image3": "../../assets/images/productb1.png",
+    "rating": 5.0,
+    "warranty": "Lifetime",
+    "discount": 0,
+    "colors": {
+      "primary": "cream"
+    },
+    "dress_style": [
+      "ethnic",
+      "nightwear",
+      "loungewear"
+    ],
+    "brand_names": [
+      "haloween dress",
+      "Royal Threads"
+    ],
+    "sizes": [
+      "large",
+      "extra large",
+      "X-large"
+    ],
+    "origin": "India"
+  },
+  {
+    "id": 18,
+    "title": "Glow Tracksuit",
+    "price": 2299,
+    "description": "Stylish tracksuit for jogging or lounging",
+    "category": "tracksuit",
+    "image": "../../assets/images/product image/20image.png",
+    "image2": "../../assets/images/primaryimage.png",
+    "image3": "../../assets/images/productb1.png",
+    "rating": 3.7,
+    "warranty": "2 Years",
+    "discount": 15,
+    "colors": {
+      "primary": "grey"
+    },
+    "dress_style": [
+      "sportswear"
+    ],
+    "brand_names": [
+      "TrackKing",
+      "Motion Gear"
+    ],
+    "sizes": [
+      "medium",
+      "large",
+      "extra large"
+    ],
+    "origin": "India"
+  },
+  {
+    "id": 19,
+    "title": "Woman's Professions",
+    "price": 1899,
+    "description": "Casual wear pullover hoodie with print",
+    "category": "hoodie",
+    "image": "../../assets/images/product image/21image.png",
+    "image2": "../../assets/images/productb2.png",
+    "image3": "../../assets/images/productb3.png",
+    "rating": 4.0,
+    "warranty": "1 Year",
+    "discount": 5,
+    "colors": {
+      "primary": "olive"
+    },
+    "dress_style": [
+      "Professional",
+      "streetwear"
+    ],
+    "brand_names": [
+      "Urban Edge",
+      "Printology"
+    ],
+    "sizes": [
+      "small",
+      "medium",
+      "large",
+      "xx-small"
+    ],
+    "origin": "India"
+  },
+  {
+    "id": 20,
+    "title": "red Jacket",
+    "price": 649,
+    "description": "Chic crop top for daily fashion",
+    "category": "Red jacket",
+    "image": "../../assets/images/product image/22image.png",
+    "image2": "../../assets/images/productb2.png",
+    "image3": "../../assets/images/productb3.png",
+    "rating": 4.3,
+    "warranty": "1 Year",
+    "discount": 0,
+    "colors": {
+      "primary": "peach"
+    },
+    "dress_style": [
+      "casual",
+      "party"
+    ],
+    "brand_names": [
+      "winter red jacket",
+      "ChicFlick"
+    ],
+    "sizes": [
+      "small",
+      "medium",
+      "4x-large"
+    ],
+    "origin": "India"
+  },
+  {
+    "id": 21,
+    "title": "Zen Sneakers",
+    "price": 2499,
+    "description": "Breathable lightweight sneakers for daily wear",
+    "category": "shoes",
+    "image": "../../assets/images/product image/23image.png",
+    "image2": "../../assets/images/productb1.png",
+    "image3": "../../assets/images/productb3.png",
+    "rating": 4.5,
+    "warranty": "1 Year",
+    "discount": 20,
+    "colors": {
+      "primary": "white"
+    },
+    "dress_style": [
+      "streetwear",
+      "sportswear"
+    ],
+    "brand_names": [
+      "SneakPro",
+      "Urban Feet"
+    ],
+    "sizes": [
+      "7",
+      "8",
+      "9"
+    ],
+    "origin": "India"
+  },
+  {
+    "id": 22,
+    "title": "Ella Maxi Dress",
+    "price": 2299,
+    "description": "Flowy maxi dress for brunches and beach days",
+    "category": "dress",
+    "image": "../../assets/images/product image/24image.png",
+    "image2": "../../assets/images/productb2.png",
+    "image3": "../../assets/images/productb1.png",
+    "rating": 4.2,
+    "warranty": "2 Years",
+    "discount": 15,
+    "colors": {
+      "primary": "mint green"
+    },
+    "dress_style": [
+      "casual",
+      "vacation"
+    ],
+    "brand_names": [
+      "BeachMuse",
+      "ChicComfort"
+    ],
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "origin": "India"
+  },
+  {
+    "id": 23,
+    "title": "Bolt Windcheater",
+    "price": 1699,
+    "description": "Water-resistant windcheater for light rains",
+    "category": "jacket",
+    "image": "../../assets/images/product image/25image.png",
+    "image2": "../../assets/images/productb2.png",
+    "image3": "../../assets/images/primaryimage.png",
+    "rating": 3.9,
+    "warranty": "1 Year",
+    "discount": 10,
+    "colors": {
+      "primary": "orange"
+    },
+    "dress_style": [
+      "winterwear",
+      "casual"
+    ],
+    "brand_names": [
+      "bolt wind cheater",
+      "RainReady"
+    ],
+    "sizes": [
+      "medium",
+      "large"
+    ],
+    "origin": "India"
+  },
+  {
+    "id": 24,
+    "title": "Black Boots",
+    "price": 1399,
+    "description": "Soft cotton palazzo pants with wide leg fit",
+    "category": "palazzo",
+    "image": "../../assets/images/product image/26image.png",
+    "image2": "../../assets/images/productb3.png",
+    "image3": "../../assets/images/productb2.png",
+    "rating": 4.0,
+    "warranty": "1 Year",
+    "discount": 0,
+    "colors": {
+      "primary": "beige"
+    },
+    "dress_style": [
+      "ethnic",
+      "casual"
+    ],
+    "brand_names": [
+      "PalazzoStyle",
+      "FreeFlow"
+    ],
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "origin": "India"
+  },
+  {
+    "id": 25,
+    "title": "Heels",
+    "price": 3299,
+    "description": "Trendy bomber jacket with smooth zipper finish",
+    "category": "jacket",
+    "image": "../../assets/images/product image/27image.png",
+    "image2": "../../assets/images/productb1.png",
+    "image3": "../../assets/images/primaryimage.png",
+    "rating": 4.4,
+    "warranty": "2 Years",
+    "discount": 25,
+    "colors": {
+      "primary": "brown"
+    },
+    "dress_style": [
+      "Heels",
+      "winterwear"
+    ],
+    "brand_names": [
+      "party heels",
+      "FlightLine"
+    ],
+    "sizes": [
+      "medium",
+      "large",
+      "x-large"
+    ],
+    "origin": "India"
+  },
+  {
+    "id": 26,
+    "title": "Basic V-Neck Tee",
+    "price": 599,
+    "description": "Essential V-neck tee for relaxed outings",
+    "category": "t-shirt",
+    "image": "../../assets/images/product image/28image.png",
+    "image2": "../../assets/images/productb2.png",
+    "image3": "../../assets/images/productb3.png",
+    "rating": 3.8,
+    "warranty": "1 Year",
+    "discount": 5,
+    "colors": {
+      "primary": "grey"
+    },
+    "dress_style": [
+      "casual"
+    ],
+    "brand_names": [
+      "CottonCo",
+      "Urban Basic"
+    ],
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "origin": "India"
+  },
+  {
+    "id": 27,
+    "title": "Leo Slippers",
+    "price": 299,
+    "description": "Foam slippers for indoor and outdoor use",
+    "category": "footwear",
+    "image": "../../assets/images/product image/29image.png",
+    "image2": "../../assets/images/productb3.png",
+    "image3": "../../assets/images/productb2.png",
+    "rating": 3.5,
+    "warranty": "6 Months",
+    "discount": 0,
+    "colors": {
+      "primary": "black"
+    },
+    "dress_style": [
+      "homewear"
+    ],
+    "brand_names": [
+      "RelaxStep",
+      "FoamFlex"
+    ],
+    "sizes": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "origin": "India"
+  },
+  {
+    "id": 28,
+    "title": "Eva Shrug",
+    "price": 1199,
+    "description": "Stylish shrug for layering over tops",
+    "category": "shrug",
+    "image": "../../assets/images/product image/30image.png",
+    "image2": "../../assets/images/primaryimage.png",
+    "image3": "../../assets/images/productb1.png",
+    "rating": 4.3,
+    "warranty": "1 Year",
+    "discount": 10,
+    "colors": {
+      "primary": "lavender"
+    },
+    "dress_style": [
+      "casual",
+      "party"
+    ],
+    "brand_names": [
+      "Shrug Me",
+      "Eva Shrug"
+    ],
+    "sizes": [
+      "small",
+      "medium"
+    ],
+    "origin": "India"
+  },
+  {
+    "id": 29,
+    "title": "Special Blue Jacket",
+    "price": 1899,
+    "description": "Trendy dhoti-style pants for modern ethnic fashion",
+    "category": "pants",
+    "image": "../../assets/images/product image/31image.png",
+    "image2": "../../assets/images/productb1.png",
+    "image3": "../../assets/images/primaryimage.png",
+    "rating": 4.1,
+    "warranty": "2 Years",
+    "discount": 20,
+    "colors": {
+      "primary": "gold"
+    },
+    "dress_style": [
+      "ethnic"
+    ],
+    "brand_names": [
+      "Blue Wear",
+      "Modern Roots"
+    ],
+    "sizes": [
+      "medium",
+      "large"
+    ],
+    "origin": "India"
+  },
+  {
+    "id": 30,
+    "title": "Cora Blazer",
+    "price": 2899,
+    "description": "Classic women’s blazer for formal occasions",
+    "category": "blazer",
+    "image": "../../assets/images/product image/32image.png",
+    "image2": "../../assets/images/productb1.png",
+    "image3": "../../assets/images/primaryimage.png",
+    "rating": 4.0,
+    "warranty": "2 Years",
+    "discount": 15,
+    "colors": {
+      "primary": "navy blue"
+    },
+    "dress_style": [
+      "formal"
+    ],
+    "brand_names": [
+      "Zara",
+      "Van Heusen"
+    ],
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "origin": "India"
+  },
+  {
+    "id": 31,
+    "title": "Flexy Sweater",
+    "price": 799,
+    "description": "Stretchable gym shorts for active sessions",
+    "category": "shorts",
+    "image": "../../assets/images/product image/33image.png",
+    "image2": "../../assets/images/productb1.png",
+    "image3": "../../assets/images/productb2.png",
+    "rating": 4.1,
+    "warranty": "1 Year",
+    "discount": 10,
+    "colors": {
+      "primary": "black"
+    },
+    "dress_style": [
+      "sportswear",
+      "winterwear"
+    ],
+    "brand_names": [
+      "Adidas",
+      "Puma"
+    ],
+    "sizes": [
+      "medium",
+      "large"
+    ],
+    "origin": "India"
+  },
+  {
+    "id": 32,
+    "title": "Flare Kurta Set",
+    "price": 2599,
+    "description": "Beautiful kurta with matching palazzo pants",
+    "category": "kurta",
+    "image": "../../assets/images/product image/34image.png",
+    "image2": "../../assets/images/primaryimage.png",
+    "image3": "../../assets/images/productb2.png",
+    "rating": 4.5,
+    "warranty": "1 Year",
+    "discount": 25,
+    "colors": {
+      "primary": "magenta"
+    },
+    "dress_style": [
+      "ethnic",
+      "party"
+    ],
+    "brand_names": [
+      "Biba",
+      "W for Women"
+    ],
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "origin": "India"
+  },
+  {
+    "id": 33,
+    "title": "red cappery",
+    "price": 1999,
+    "description": "Washed denim jacket with metal buttons",
+    "category": "jacket",
+    "image": "../../assets/images/product image/35image.png",
+    "image2": "../../assets/images/productb1.png",
+    "image3": "../../assets/images/productb3.png",
+    "rating": 4.3,
+    "warranty": "2 Years",
+    "discount": 20,
+    "colors": {
+      "primary": "denim blue"
+    },
+    "dress_style": [
+      "casual",
+      "streetwear"
+    ],
+    "brand_names": [
+      "red cappery",
+      "Wrangler"
+    ],
+    "sizes": [
+      "medium",
+      "large",
+      "x-large"
+    ],
+    "origin": "India"
+  },
+  {
+    "id": 34,
+    "title": "Comfy cappery",
+    "price": 1099,
+    "description": "Fleece joggers with drawstring and zip pockets",
+    "category": "trackpants",
+    "image": "../../assets/images/product image/36image.png",
+    "image2": "../../assets/images/primaryimage.png",
+    "image3": "../../assets/images/productb2.png",
+    "rating": 4.0,
+    "warranty": "1 Year",
+    "discount": 10,
+    "colors": {
+      "primary": "charcoal grey"
+    },
+    "dress_style": [
+      "sportswear",
+      "casual"
+    ],
+    "brand_names": [
+      "Comfy cappery",
+      "Roadster"
+    ],
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "origin": "India"
+  },
+  {
+    "id": 35,
+    "title": "Luna Saree",
+    "price": 3499,
+    "description": "Elegant saree for festive occasions",
+    "category": "saree",
+    "image": "../../assets/images/product image/37image.png",
+    "image2": "../../assets/images/productb3.png",
+    "image3": "../../assets/images/productb2.png",
+    "rating": 4.7,
+    "warranty": "2 Years",
+    "discount": 30,
+    "colors": {
+      "primary": "royal blue"
+    },
+    "dress_style": [
+      "ethnic"
+    ],
+    "brand_names": [
+      "bundle_dresses",
+      "BharatSthali",
+      "Comfy cappery"
+    ],
+    "sizes": [
+      "free size"
+    ],
+    "origin": "India"
+  },
+  {
+    "id": 36,
+    "title": "Maharaja's Style",
+    "price": 1599,
+    "description": "Oversized white hoodie with kangaroo pocket",
+    "category": "hoodie",
+    "image": "../../assets/images/product image/38image.png",
+    "image2": "../../assets/images/primaryimage.png",
+    "image3": "../../assets/images/productb1.png",
+    "rating": 4.2,
+    "warranty": "1 Year",
+    "discount": 15,
+    "colors": {
+      "primary": "white"
+    },
+    "dress_style": [
+      "Witch Style",
+      "streetwear"
+    ],
+    "brand_names": [
+      "Bewakoof",
+      "H&M"
+    ],
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "origin": "India"
+  },
+  {
+    "id": 37,
+    "title": "Slim Fit Chinos",
+    "price": 1799,
+    "description": "Tailored chinos for office and daily wear",
+    "category": "trousers",
+    "image": "../../assets/images/product image/39image.png",
+    "image2": "../../assets/images/productb2.png",
+    "image3": "../../assets/images/productb3.png",
+    "rating": 4.0,
+    "warranty": "2 Years",
+    "discount": 10,
+    "colors": {
+      "primary": "khaki"
+    },
+    "dress_style": [
+      "formal",
+      "casual"
+    ],
+    "brand_names": [
+      "Louis Philippe",
+      "Allen Solly"
+    ],
+    "sizes": [
+      "medium",
+      "large",
+      "x-large"
+    ],
+    "origin": "India"
+  },
+  {
+    "id": 38,
+    "title": "Glow Party Gown",
+    "price": 5999,
+    "description": "Glittery evening gown for special parties",
+    "category": "gown",
+    "image": "../../assets/images/product image/40image.png",
+    "image2": "../../assets/images/productb1.png",
+    "image3": "../../assets/images/primaryimage.png",
+    "rating": 4.8,
+    "warranty": "2 Years",
+    "discount": 35,
+    "colors": {
+      "primary": "silver"
+    },
+    "dress_style": [
+      "party"
+    ],
+    "brand_names": [
+      "Zariin",
+      "Faballey"
+    ],
+    "sizes": [
+      "medium",
+      "large"
+    ],
+    "origin": "India"
+  },
+  {
+    "id": 39,
+    "title": "Small Skirt",
+    "price": 4299,
+    "description": "Faux leather aviator jacket with shearling collar",
+    "category": "jacket",
+    "image": "../../assets/images/product image/41image.png",
+    "image2": "../../assets/images/productb3.png",
+    "image3": "../../assets/images/productb1.png",
+    "rating": 4.6,
+    "warranty": "3 Years",
+    "discount": 20,
+    "colors": {
+      "primary": "brown"
+    },
+    "dress_style": [
+      "casual",
+      "winterwear"
+    ],
+    "brand_names": [
+      "Eco Army Shorts",
+      "Jack & Jones"
+    ],
+    "sizes": [
+      "medium",
+      "large",
+      "x-large"
+    ],
+    "origin": "India"
+  },
+  {
+    "id": 40,
+    "title": "Stripe T-Shirt",
+    "price": 799,
+    "description": "Striped round neck t-shirt for summer days",
+    "category": "t-shirt",
+    "image": "../../assets/images/product image/42image.png",
+    "image2": "../../assets/images/productb3.png",
+    "image3": "../../assets/images/productb2.png",
+    "rating": 3.9,
+    "warranty": "1 Year",
+    "discount": 10,
+    "colors": {
+      "primary": "white/blue"
+    },
+    "dress_style": [
+      "casual"
+    ],
+    "brand_names": [
+      "U.S. Polo Assn.",
+      "Pepe Jeans"
+    ],
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "origin": "India"
+  },
+  {
+    "id": 41,
+    "title": "White Skirt",
+    "price": 1199,
+    "description": "Breathable yoga pants perfect for flexibility",
+    "category": "leggings",
+    "image": "../../assets/images/product image/43image.png",
+    "image2": "../../assets/images/productb2.png",
+    "image3": "../../assets/images/productb1.png",
+    "rating": 4.3,
+    "warranty": "1 Year",
+    "discount": 10,
+    "colors": {
+      "primary": "black"
+    },
+    "dress_style": [
+      "sportswear"
+    ],
+    "brand_names": [
+      "white skirt",
+      "Cultsport"
+    ],
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "origin": "India"
+  },
+  {
+    "id": 42,
+    "title": "Amber Anarkali",
+    "price": 3199,
+    "description": "Traditional Anarkali suit with embroidery",
+    "category": "ethnic wear",
+    "image": "../../assets/images/product image/44image.png",
+    "image2": "../../assets/images/productb1.png",
+    "image3": "../../assets/images/productb3.png",
+    "rating": 4.5,
+    "warranty": "2 Years",
+    "discount": 25,
+    "colors": {
+      "primary": "maroon"
+    },
+    "dress_style": [
+      "ethnic"
+    ],
+    "brand_names": [
+      "Libas",
+      "Aurelia"
+    ],
+    "sizes": [
+      "medium",
+      "large",
+      "x-large"
+    ],
+    "origin": "India"
+  },
+  {
+    "id": 43,
+    "title": "Blitz Sports Tee",
+    "price": 899,
+    "description": "Dry-fit sports tee with mesh panels",
+    "category": "sportswear",
+    "image": "../../assets/images/product image/45image.png",
+    "image2": "../../assets/images/productb2.png",
+    "image3": "../../assets/images/primaryimage.png",
+    "rating": 4.0,
+    "warranty": "1 Year",
+    "discount": 10,
+    "colors": {
+      "primary": "lime green"
+    },
+    "dress_style": [
+      "sportswear"
+    ],
+    "brand_names": [
+      "Reebok",
+      "Domyos"
+    ],
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "origin": "India"
+  },
+  {
+    "id": 44,
+    "title": "Classic Formal Shirt",
+    "price": 1499,
+    "description": "Slim fit formal shirt for office meetings",
+    "category": "shirt",
+    "image": "../../assets/images/product image/46image.png",
+    "image2": "../../assets/images/productb2.png",
+    "image3": "../../assets/images/productb1.png",
+    "rating": 4.2,
+    "warranty": "2 Years",
+    "discount": 15,
+    "colors": {
+      "primary": "sky blue"
+    },
+    "dress_style": [
+      "formal",
+      "party"
+    ],
+    "brand_names": [
+      "Arrow",
+      "Peter England"
+    ],
+    "sizes": [
+      "medium",
+      "large",
+      "x-large"
+    ],
+    "origin": "India"
+  },
+  {
+    "id": 46,
+    "title": "Puffer Winter Coat",
+    "price": 5499,
+    "description": "Insulated long coat for freezing temperatures",
+    "category": "coat",
+    "image": "../../assets/images/product image/48image.png",
+    "image2": "../../assets/images/productb1.png",
+    "image3": "../../assets/images/productb2.png",
+    "rating": 4.6,
+    "warranty": "4 Years",
+    "discount": 40,
+    "colors": {
+      "primary": "olive green"
+    },
+    "dress_style": [
+      "winterwear"
+    ],
+    "brand_names": [
+      "Decathlon",
+      "Uniqlo"
+    ],
+    "sizes": [
+      "medium",
+      "large",
+      "x-large"
+    ],
+    "origin": "India"
+  },
+  {
+    "id": 47,
+    "title": "Nexa Tank Top",
+    "price": 499,
+    "description": "Basic tank top for workouts and layering",
+    "category": "tank top",
+    "image": "../../assets/images/product image/49image.png",
+    "image2": "../../assets/images/productb2.png",
+    "image3": "../../assets/images/productb3.png",
+    "rating": 3.8,
+    "warranty": "1 Year",
+    "discount": 5,
+    "colors": {
+      "primary": "navy"
+    },
+    "dress_style": [
+      "sportswear",
+      "casual"
+    ],
+    "brand_names": [
+      "Jockey",
+      "Enamor"
+    ],
+    "sizes": [
+      "small",
+      "medium"
+    ],
+    "origin": "India"
+  },
+  {
+    "id": 48,
+    "title": "Denim Shorts",
+    "price": 1399,
+    "description": "High-waist denim shorts with frayed hem",
+    "category": "shorts",
+    "image": "../../assets/images/product image/50image.png",
+    "image2": "../../assets/images/primaryimage.png",
+    "image3": "../../assets/images/productb3.png",
+    "rating": 4.0,
+    "warranty": "1 Year",
+    "discount": 10,
+    "colors": {
+      "primary": "light blue"
+    },
+    "dress_style": [
+      "casual",
+      "streetwear"
+    ],
+    "brand_names": [
+      "ONLY",
+      "Lee Cooper"
+    ],
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "origin": "India"
+  },
+  {
+    "id": 49,
+    "title": "Miami T-Shirt",
+    "price": 799,
+    "description": "Bright and bold Miami-inspired t-shirt perfect for beach days or casual outings.",
+    "category": "tshirts",
+    "image": "../../assets/images/product image/51image.png",
+    "image2": "../../assets/images/product image/miami_tshirt_back.png",
+    "image3": "../../assets/images/product image/miami_tshirt_primary.png",
+    "rating": 4.4,
+    "warranty": "6 Months",
+    "discount": 10,
+    "colors": {
+      "primary": "aqua blue"
+    },
+    "dress_style": [
+      "beachwear",
+      "summer",
+      "casual"
+    ],
+    "brand_names": [
+      "Miami Vibe",
+      "Urban Edge"
+    ],
+    "sizes": [
+      "small",
+      "medium",
+      "large",
+      "extra large"
+    ],
+    "origin": "India"
+  }
+]

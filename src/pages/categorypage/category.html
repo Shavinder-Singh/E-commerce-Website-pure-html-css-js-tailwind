@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category Page</title>
+    <link rel="stylesheet" href="../../output.css">
+    <link rel="stylesheet" href="./category.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../assets/swiper-11.2.8/package/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <!-- Announcement Bar -->
+    <section class="announcement_bar font-satoshi bg-primary flex justify-center items-center h-[43px] px-[44.5px]">
+    </section>
+    <script>
+        fetch('../../components/announcementbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector(".announcement_bar").innerHTML = data;
+                var script = document.createElement('script');
+                script.src = '../../components/componentsJs/announcement.js';
+                document.body.appendChild(script);
+            });
+    </script>
+
+    <!-- Navbar -->
+    <div id="navbar_mobile"></div>
+
+    <!-- Searchbar slider wrapper -->
+    <div
+        class="swiper_slider search_bar_items_wrapper px-[16px] md:px-[50px] 2xl:px-[100px] hidden absolute top-[114px] bg-white text-black p-[10px] left-0 h-[100%] z-[999] md:top-[127px] lg:top-[128px] 2xl:top-[129px] w-[100%]">
+    </div>
+
+    <script>
+        // Load navbar
+        fetch('../../components/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar_mobile").innerHTML = data;
+
+                var script = document.createElement('script');
+                script.src = "../../components/componentsJs/navbar.js";
+                document.body.appendChild(script);
+            });
+
+        // Load search slider
+        fetch('../../components/searchslider.html')
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector(".swiper_slider").innerHTML = data;
+
+                // ✅ Swiper initialized with unique class
+                const search_swiper = new Swiper(".search_slider", {
+                    slidesPerView: 2,
+                    spaceBetween: 10,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    breakpoints: {
+                        320: {
+                            slidesPerView: 2,
+                            spaceBetween: 10,
+                        },
+                        375: {
+                            slidesPerView: 2,
+                            spaceBetween: 20,
+                        },
+                        768: {
+                            slidesPerView: 4,
+                            spaceBetween: 20,
+                        }
+                    }
+                });
+
+            });
+    </script>
+    <script src="../../assets/swiper-11.2.8/package/swiper-bundle.min.js"></script>
+    <div class="category_slider_section px-[16px] lg:px-[50px] 2xl:px-[100px] mb-[185px] lg:mb-[170px]">
+        <div class="">
+            <ul class="flex gap-[6px] pt-[20px] md:pt-[24px] pb-[12px] border-t-[1px] border-black/10 md:mb-[24px]">
+                <li
+                    class="flex items-center gap-[4px] font-satoshiregular text-[14px] md:text-[16px] text-[#000000] opacity-[60%]">
+                    Home
+                    <span>
+                        <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M5.71433 2.6607L10.0893 7.0357C10.1505 7.09666 10.1991 7.16911 10.2322 7.24888C10.2653 7.32865 10.2823 7.41417 10.2823 7.50054C10.2823 7.58691 10.2653 7.67243 10.2322 7.7522C10.1991 7.83197 10.1505 7.90442 10.0893 7.96538L5.71433 12.3404C5.59105 12.4637 5.42384 12.5329 5.24949 12.5329C5.07514 12.5329 4.90793 12.4637 4.78464 12.3404C4.66136 12.2171 4.5921 12.0499 4.5921 11.8755C4.5921 11.7012 4.66136 11.534 4.78464 11.4107L8.69535 7.49999L4.7841 3.58929C4.66081 3.46601 4.59155 3.2988 4.59155 3.12445C4.59155 2.9501 4.66081 2.78289 4.7841 2.6596C4.90738 2.53632 5.07459 2.46706 5.24894 2.46706C5.42329 2.46706 5.5905 2.53632 5.71379 2.6596L5.71433 2.6607Z"
+                                fill="black" fill-opacity="0.6" />
+                        </svg>
+                    </span>
+                </li>
+                <li class="font-satoshiregular text-[14px] md:text-[16px] text-[#000000] opacity-[100%]">Casual</li>
+            </ul>
+        </div>
+        <!-- fade section for filter in mobile  -->
+        <div class="fade_filter_container  absolute top-0 border-2 w-[100%] h-[100%] bg-black/75 left-0 hidden">
+            <!--  -->
+            <!--  -->
+        </div>
+        <div class="category_page_filter_section md:flex gap-[21px]  md:static">
+            <!-- filter part -->
+            <div
+                class="hidden category_page_filter_mobile  fixed  top-[112px] left-[0px] border-2 md:border-none md:relative md:top-0 bg-white z-[10] md:bg-transparent md:border-[1px] h-[100%] md:h-[100%] border-black/10 pl-[19px] pr-[18px] md:pl-[0px] pt-[20px] pb-[25px] md:px-[24px] md:py-[20px] rounded-[20px] md:w-[40%]  md:flex-col md:flex">
+                <div class="">
+                    <div
+                        class="flex justify-between  items-center pb-[16px] md:pb-[24px] border-b-[1px] border-black/10">
+                        <h1 class="text-[20px] font-satoshibold text-[#000000] opacity-100">Filters</h1>
+                        <span>
+                            <svg class="hidden md:flex " width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.125 12.125V20.75C13.125 21.0484 13.0065 21.3345 12.7955 21.5455C12.5845 21.7565 12.2984 21.875 12 21.875C11.7016 21.875 11.4155 21.7565 11.2045 21.5455C10.9935 21.3345 10.875 21.0484 10.875 20.75V12.125C10.875 11.8266 10.9935 11.5405 11.2045 11.3295C11.4155 11.1185 11.7016 11 12 11C12.2984 11 12.5845 11.1185 12.7955 11.3295C13.0065 11.5405 13.125 11.8266 13.125 12.125ZM18.75 18.5C18.4516 18.5 18.1655 18.6185 17.9545 18.8295C17.7435 19.0405 17.625 19.3266 17.625 19.625V20.75C17.625 21.0484 17.7435 21.3345 17.9545 21.5455C18.1655 21.7565 18.4516 21.875 18.75 21.875C19.0484 21.875 19.3345 21.7565 19.5455 21.5455C19.7565 21.3345 19.875 21.0484 19.875 20.75V19.625C19.875 19.3266 19.7565 19.0405 19.5455 18.8295C19.3345 18.6185 19.0484 18.5 18.75 18.5ZM21 14.75H19.875V4.25C19.875 3.95163 19.7565 3.66548 19.5455 3.4545C19.3345 3.24353 19.0484 3.125 18.75 3.125C18.4516 3.125 18.1655 3.24353 17.9545 3.4545C17.7435 3.66548 17.625 3.95163 17.625 4.25V14.75H16.5C16.2016 14.75 15.9155 14.8685 15.7045 15.0795C15.4935 15.2905 15.375 15.5766 15.375 15.875C15.375 16.1734 15.4935 16.4595 15.7045 16.6705C15.9155 16.8815 16.2016 17 16.5 17H21C21.2984 17 21.5845 16.8815 21.7955 16.6705C22.0065 16.4595 22.125 16.1734 22.125 15.875C22.125 15.5766 22.0065 15.2905 21.7955 15.0795C21.5845 14.8685 21.2984 14.75 21 14.75ZM5.25 15.5C4.95163 15.5 4.66548 15.6185 4.4545 15.8295C4.24353 16.0405 4.125 16.3266 4.125 16.625V20.75C4.125 21.0484 4.24353 21.3345 4.4545 21.5455C4.66548 21.7565 4.95163 21.875 5.25 21.875C5.54837 21.875 5.83452 21.7565 6.0455 21.5455C6.25647 21.3345 6.375 21.0484 6.375 20.75V16.625C6.375 16.3266 6.25647 16.0405 6.0455 15.8295C5.83452 15.6185 5.54837 15.5 5.25 15.5ZM7.5 11.75H6.375V4.25C6.375 3.95163 6.25647 3.66548 6.0455 3.4545C5.83452 3.24353 5.54837 3.125 5.25 3.125C4.95163 3.125 4.66548 3.24353 4.4545 3.4545C4.24353 3.66548 4.125 3.95163 4.125 4.25V11.75H3C2.70163 11.75 2.41548 11.8685 2.2045 12.0795C1.99353 12.2905 1.875 12.5766 1.875 12.875C1.875 13.1734 1.99353 13.4595 2.2045 13.6705C2.41548 13.8815 2.70163 14 3 14H7.5C7.79837 14 8.08452 13.8815 8.2955 13.6705C8.50647 13.4595 8.625 13.1734 8.625 12.875C8.625 12.5766 8.50647 12.2905 8.2955 12.0795C8.08452 11.8685 7.79837 11.75 7.5 11.75ZM14.25 7.25H13.125V4.25C13.125 3.95163 13.0065 3.66548 12.7955 3.4545C12.5845 3.24353 12.2984 3.125 12 3.125C11.7016 3.125 11.4155 3.24353 11.2045 3.4545C10.9935 3.66548 10.875 3.95163 10.875 4.25V7.25H9.75C9.45163 7.25 9.16548 7.36853 8.9545 7.5795C8.74353 7.79048 8.625 8.07663 8.625 8.375C8.625 8.67337 8.74353 8.95952 8.9545 9.1705C9.16548 9.38147 9.45163 9.5 9.75 9.5H14.25C14.5484 9.5 14.8345 9.38147 15.0455 9.1705C15.2565 8.95952 15.375 8.67337 15.375 8.375C15.375 8.07663 15.2565 7.79048 15.0455 7.5795C14.8345 7.36853 14.5484 7.25 14.25 7.25Z"
+                                    fill="black" fill-opacity="0.4" />
+                            </svg>
+                            <svg class="md:hidden close_icon_filter" width="24" height="25" viewBox="0 0 24 25"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.5459 18.4541C19.7572 18.6654 19.876 18.952 19.876 19.2509C19.876 19.5498 19.7572 19.8365 19.5459 20.0478C19.3346 20.2592 19.0479 20.3779 18.749 20.3779C18.4501 20.3779 18.1635 20.2592 17.9521 20.0478L12 14.0937L6.0459 20.0459C5.83455 20.2573 5.54791 20.376 5.24902 20.376C4.95014 20.376 4.66349 20.2573 4.45215 20.0459C4.2408 19.8346 4.12207 19.5479 4.12207 19.2491C4.12207 18.9502 4.2408 18.6635 4.45215 18.4522L10.4062 12.5L4.45402 6.54593C4.24268 6.33459 4.12395 6.04795 4.12395 5.74906C4.12395 5.45017 4.24268 5.16353 4.45402 4.95218C4.66537 4.74084 4.95201 4.62211 5.2509 4.62211C5.54978 4.62211 5.83643 4.74084 6.04777 4.95218L12 10.9062L17.954 4.95125C18.1654 4.7399 18.452 4.62117 18.7509 4.62117C19.0498 4.62117 19.3364 4.7399 19.5478 4.95125C19.7591 5.16259 19.8778 5.44924 19.8778 5.74812C19.8778 6.04701 19.7591 6.33365 19.5478 6.545L13.5937 12.5L19.5459 18.4541Z"
+                                    fill="black" fill-opacity="0.4" />
+                            </svg>
+
+                        </span>
+                    </div>
+                </div>
+                <div class="pt-[20px] md:pt-[24px] pb-[24px] border-b-[1px] border-black/10 cursor-pointer">
+                    <ul class="flex flex-col gap-[20px] transition duration-1000">
+                        <li
+                            class=" flex justify-between items-center flex-col font-satoshiregular  text-[16px] text-[#000000] opacity-[60%]">
+                            <div class="flex w-[100%] justify-between pb-[0px] category_btn_open ">
+
+
+                                <p>T-Shirts</p>
+                                <span>
+                                    <svg class="accordian_icon transition duration-1000" width="16" height="16"
+                                        viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.53073 2.4694L11.5307 7.4694C11.6007 7.53908 11.6561 7.62187 11.694 7.71304C11.7318 7.8042 11.7513 7.90194 11.7513 8.00065C11.7513 8.09936 11.7318 8.1971 11.694 8.28827C11.6561 8.37943 11.6007 8.46222 11.5307 8.5319L6.53073 13.5319C6.38984 13.6728 6.19874 13.752 5.99948 13.752C5.80023 13.752 5.60913 13.6728 5.46823 13.5319C5.32734 13.391 5.24818 13.1999 5.24818 13.0007C5.24818 12.8014 5.32734 12.6103 5.46823 12.4694L9.93761 8.00003L5.46761 3.53065C5.32671 3.38976 5.24756 3.19866 5.24756 2.9994C5.24756 2.80015 5.32671 2.60905 5.46761 2.46815C5.60851 2.32726 5.7996 2.2481 5.99886 2.2481C6.19812 2.2481 6.38921 2.32726 6.53011 2.46815L6.53073 2.4694Z"
+                                            fill="black" fill-opacity="0.6" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <ul
+                                class="text-left w-[100%]   flex flex-col gap-[10px] category_btn h-0  transition-all duration-1000 overflow-hidden category_btn">
+                                <li data-value="Round Neck T-shirt"
+                                    class="border-b-[1px] border-black/10 p-[5px] text-[#000000] opacity-[100%] hover:text-black hover:font-satoshimedium">
+                                    Round Neck T-shirt</li>
+
+                                <li data-value="Royal Dress"
+                                    class="border-b-[1px] border-black/10 p-[5px] text-[#000000] opacity-[100%] hover:text-black hover:font-satoshimedium">
+                                    Royal Dress</li>
+
+                                <li data-value="TrackKing"
+                                    class="border-b-[1px] border-black/10 p-[5px] text-[#000000] opacity-[100%] hover:text-black hover:font-satoshimedium">
+                                    TrackKing</li>
+
+                                <li data-value="bundle_dresses"
+                                    class="border-b-[1px] border-black/10 p-[5px] text-[#000000] opacity-[100%] hover:text-black hover:font-satoshimedium">
+                                    Tailored Dress</li>
+                            </ul>
+                        </li>
+                        <li
+                            class=" flex justify-between items-center flex-col font-satoshiregular text-[16px] text-[#000000] opacity-[60%]">
+                            <div class="flex w-[100%] justify-between category_btn_open">
+
+
+                                <p>Pants</p>
+                                <span>
+                                    <svg class="accordian_icon transition duration-1000" width="16" height="16"
+                                        viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.53073 2.4694L11.5307 7.4694C11.6007 7.53908 11.6561 7.62187 11.694 7.71304C11.7318 7.8042 11.7513 7.90194 11.7513 8.00065C11.7513 8.09936 11.7318 8.1971 11.694 8.28827C11.6561 8.37943 11.6007 8.46222 11.5307 8.5319L6.53073 13.5319C6.38984 13.6728 6.19874 13.752 5.99948 13.752C5.80023 13.752 5.60913 13.6728 5.46823 13.5319C5.32734 13.391 5.24818 13.1999 5.24818 13.0007C5.24818 12.8014 5.32734 12.6103 5.46823 12.4694L9.93761 8.00003L5.46761 3.53065C5.32671 3.38976 5.24756 3.19866 5.24756 2.9994C5.24756 2.80015 5.32671 2.60905 5.46761 2.46815C5.60851 2.32726 5.7996 2.2481 5.99886 2.2481C6.19812 2.2481 6.38921 2.32726 6.53011 2.46815L6.53073 2.4694Z"
+                                            fill="black" fill-opacity="0.6" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <ul
+                                class="text-left w-[100%]   flex flex-col gap-[10px] category_btn h-0  transition-all duration-1000 overflow-hidden category_btn">
+                                <li data-value="brown pant"
+                                    class="border-b-[1px] border-black/10 p-[5px] text-[#000000] opacity-[100%] hover:text-black hover:font-satoshimedium">
+                                    brown pant</li>
+
+                                <li data-value="Asthetic Pant"
+                                    class="border-b-[1px] border-black/10 p-[5px] text-[#000000] opacity-[100%] hover:text-black hover:font-satoshimedium">
+                                    Asthetic Pant</li>
+
+                                <li data-value="Bluish Pant"
+                                    class="border-b-[1px] border-black/10 p-[5px] text-[#000000] opacity-[100%] hover:text-black hover:font-satoshimedium">
+                                    Bluish Pant</li>
+
+                                <li data-value="Bluish Pant"
+                                    class="border-b-[1px] border-black/10 p-[5px] text-[#000000] opacity-[100%] hover:text-black hover:font-satoshimedium">
+                                    Activewear</li>
+
+
+
+
+                            </ul>
+                        </li>
+                        <li
+                            class=" flex justify-between items-center flex-col font-satoshiregular text-[16px] text-[#000000] opacity-[60%]">
+                            <div class="flex w-[100%] justify-between category_btn_open">
+
+
+                                <p>Shorts</p>
+                                <span>
+                                    <svg class="accordian_icon transition duration-1000" width="16" height="16"
+                                        viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.53073 2.4694L11.5307 7.4694C11.6007 7.53908 11.6561 7.62187 11.694 7.71304C11.7318 7.8042 11.7513 7.90194 11.7513 8.00065C11.7513 8.09936 11.7318 8.1971 11.694 8.28827C11.6561 8.37943 11.6007 8.46222 11.5307 8.5319L6.53073 13.5319C6.38984 13.6728 6.19874 13.752 5.99948 13.752C5.80023 13.752 5.60913 13.6728 5.46823 13.5319C5.32734 13.391 5.24818 13.1999 5.24818 13.0007C5.24818 12.8014 5.32734 12.6103 5.46823 12.4694L9.93761 8.00003L5.46761 3.53065C5.32671 3.38976 5.24756 3.19866 5.24756 2.9994C5.24756 2.80015 5.32671 2.60905 5.46761 2.46815C5.60851 2.32726 5.7996 2.2481 5.99886 2.2481C6.19812 2.2481 6.38921 2.32726 6.53011 2.46815L6.53073 2.4694Z"
+                                            fill="black" fill-opacity="0.6" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <ul
+                                class="text-left w-[100%]   flex flex-col gap-[10px] category_btn h-0  transition-all duration-1000 overflow-hidden category_btn">
+                                <li data-value="Comfy cappery"
+                                    class="border-b-[1px] border-black/10 p-[5px] text-[#000000] opacity-[100%] hover:text-black hover:font-satoshimedium">
+                                    Comfy cappery</li>
+
+                                <li data-value="red cappery"
+                                    class="border-b-[1px] border-black/10 p-[5px] text-[#000000] opacity-[100%] hover:text-black hover:font-satoshimedium">
+                                    Strechtable cappery</li>
+
+                                <li data-value="Eco Army Shorts"
+                                    class="border-b-[1px] border-black/10 p-[5px] text-[#000000] opacity-[100%] hover:text-black hover:font-satoshimedium">
+                                    Eco Army Shorts</li>
+
+                                <li data-value="evo activewear"
+                                    class="border-b-[1px] border-black/10 p-[5px] text-[#000000] opacity-[100%] hover:text-black hover:font-satoshimedium">
+                                    evo activewear</li>
+
+
+
+                            </ul>
+                        </li>
+                        <li
+                            class=" flex justify-between items-center flex-col font-satoshiregular text-[16px] text-[#000000] opacity-[60%]">
+                            <div class="flex w-[100%] justify-between category_btn_open">
+
+
+                                <p>Winter Item's</p>
+                                <span>
+                                    <svg class="accordian_icon transition duration-1000" width="16" height="16"
+                                        viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.53073 2.4694L11.5307 7.4694C11.6007 7.53908 11.6561 7.62187 11.694 7.71304C11.7318 7.8042 11.7513 7.90194 11.7513 8.00065C11.7513 8.09936 11.7318 8.1971 11.694 8.28827C11.6561 8.37943 11.6007 8.46222 11.5307 8.5319L6.53073 13.5319C6.38984 13.6728 6.19874 13.752 5.99948 13.752C5.80023 13.752 5.60913 13.6728 5.46823 13.5319C5.32734 13.391 5.24818 13.1999 5.24818 13.0007C5.24818 12.8014 5.32734 12.6103 5.46823 12.4694L9.93761 8.00003L5.46761 3.53065C5.32671 3.38976 5.24756 3.19866 5.24756 2.9994C5.24756 2.80015 5.32671 2.60905 5.46761 2.46815C5.60851 2.32726 5.7996 2.2481 5.99886 2.2481C6.19812 2.2481 6.38921 2.32726 6.53011 2.46815L6.53073 2.4694Z"
+                                            fill="black" fill-opacity="0.6" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <ul
+                                class="text-left w-[100%]   flex flex-col gap-[10px] category_btn h-0  transition-all duration-1000 overflow-hidden category_btn">
+                                <li data-value="winter red jacket"
+                                    class="border-b-[1px] border-black/10 p-[5px] text-[#000000] opacity-[100%] hover:text-black hover:font-satoshimedium">
+                                    Red jacket</li>
+
+                                <li data-value="Eva Shrug"
+                                    class="border-b-[1px] border-black/10 p-[5px] text-[#000000] opacity-[100%] hover:text-black hover:font-satoshimedium">
+                                    Eva Shrug</li>
+
+                                <li data-value="Blue Wear"
+                                    class="border-b-[1px] border-black/10 p-[5px] text-[#000000] opacity-[100%] hover:text-black hover:font-satoshimedium">
+                                    Blue Wear</li>
+
+                                <li data-value="white skirt"
+                                    class="border-b-[1px] border-black/10 p-[5px] text-[#000000] opacity-[100%] hover:text-black hover:font-satoshimedium">
+                                    white skirt</li>
+
+
+
+                            </ul>
+                        </li>
+                        <li
+                            class=" flex justify-between items-center flex-col font-satoshiregular text-[16px] text-[#000000] opacity-[60%]">
+                            <div class="flex w-[100%] justify-between category_btn_open">
+
+
+                                <p>Party Wear</p>
+                                <span>
+                                    <svg class="accordian_icon transition duration-1000" width="16" height="16"
+                                        viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.53073 2.4694L11.5307 7.4694C11.6007 7.53908 11.6561 7.62187 11.694 7.71304C11.7318 7.8042 11.7513 7.90194 11.7513 8.00065C11.7513 8.09936 11.7318 8.1971 11.694 8.28827C11.6561 8.37943 11.6007 8.46222 11.5307 8.5319L6.53073 13.5319C6.38984 13.6728 6.19874 13.752 5.99948 13.752C5.80023 13.752 5.60913 13.6728 5.46823 13.5319C5.32734 13.391 5.24818 13.1999 5.24818 13.0007C5.24818 12.8014 5.32734 12.6103 5.46823 12.4694L9.93761 8.00003L5.46761 3.53065C5.32671 3.38976 5.24756 3.19866 5.24756 2.9994C5.24756 2.80015 5.32671 2.60905 5.46761 2.46815C5.60851 2.32726 5.7996 2.2481 5.99886 2.2481C6.19812 2.2481 6.38921 2.32726 6.53011 2.46815L6.53073 2.4694Z"
+                                            fill="black" fill-opacity="0.6" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <ul
+                                class="text-left w-[100%]   flex flex-col gap-[10px] category_btn h-0  transition-all duration-1000 overflow-hidden category_btn">
+                                <li data-value="haloween dress"
+                                    class="border-b-[1px] border-black/10 p-[5px] text-[#000000] opacity-[100%] hover:text-black hover:font-satoshimedium">
+                                    Haloween Things</li>
+                                <li data-value="ChicComfort"
+                                    class="border-b-[1px] border-black/10 p-[5px] text-[#000000] opacity-[100%] hover:text-black hover:font-satoshimedium">
+                                    ChicComfort</li>
+                                <li data-value="bolt wind cheater"
+                                    class="border-b-[1px] border-black/10 p-[5px] text-[#000000] opacity-[100%] hover:text-black hover:font-satoshimedium">
+                                    bolt wind cheater</li>
+                                <li data-value="party heels"
+                                    class="border-b-[1px] border-black/10 p-[5px] text-[#000000] opacity-[100%] hover:text-black hover:font-satoshimedium">
+                                    party heels</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    class="pt-[20px] md:pt-[24px] pb-[24px] border-b-[1px] border-black/10 flex flex-col gap-[16px] md:gap-[20px] transition-all">
+                    <div class="flex justify-between items-center price_filter_wrapper transition-all">
+                        <h1 class=" font-satoshibold text-[#000000] opacity-[100%] text-[20px]">Price</h1>
+                        <span class="filter_arrow transition-all duration-100   ">
+                            <svg class="accordian_price" width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.4694 9.96945L7.4694 4.96945C7.53908 4.89953 7.62187 4.84405 7.71304 4.8062C7.8042 4.76834 7.90194 4.74886 8.00065 4.74886C8.09936 4.74886 8.1971 4.76834 8.28827 4.8062C8.37943 4.84405 8.46222 4.89953 8.5319 4.96945L13.5319 9.96945C13.6728 10.1103 13.752 10.3014 13.752 10.5007C13.752 10.7 13.6728 10.8911 13.5319 11.0319C13.391 11.1728 13.1999 11.252 13.0007 11.252C12.8014 11.252 12.6103 11.1728 12.4694 11.0319L8.00003 6.56257L3.53065 11.0326C3.38976 11.1735 3.19866 11.2526 2.9994 11.2526C2.80015 11.2526 2.60905 11.1735 2.46815 11.0326C2.32726 10.8917 2.2481 10.7006 2.2481 10.5013C2.2481 10.3021 2.32726 10.111 2.46815 9.97007L2.4694 9.96945Z"
+                                    fill="black" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="">
+                        <div
+                            class="range-slider-container max-h-0 overflow-hidden transition-all duration-100 opacity-0">
+                            <div class="slider">
+                                <div class="price-slider"></div>
+                            </div>
+
+                            <div class="range-input">
+                                <input type="range" class="min-range" min="0" max="10000" value="0" step="1">
+                                <input type="range" class="max-range" min="0" max="10000" value="10000" step="1">
+
+                            </div>
+
+                            <div class="tooltip-container transition-all duration-[2s] opacity-0">
+                                <span class="tooltip min-tooltip font-satoshimedium whitespace-nowrap">300</span>
+                                <span class="tooltip max-tooltip font-satoshimedium whitespace-nowrap">700</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div
+                    class="pt-[20px] md:pt-[24px] pb-[20px] md:pb-[24px] border-b-[1px] border-black/10 flex flex-col gap-[16px] md:gap-[20px]">
+                    <div class="flex justify-between items-center color_filter_wrapper">
+                        <h1 class=" font-satoshibold text-[#000000] opacity-[100%] text-[20px]">Colors</h1>
+                        <span class="">
+                            <svg class="accordian_color colors_arrow transition-all duration-[0.9s]" width="16"
+                                height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.4694 9.96945L7.4694 4.96945C7.53908 4.89953 7.62187 4.84405 7.71304 4.8062C7.8042 4.76834 7.90194 4.74886 8.00065 4.74886C8.09936 4.74886 8.1971 4.76834 8.28827 4.8062C8.37943 4.84405 8.46222 4.89953 8.5319 4.96945L13.5319 9.96945C13.6728 10.1103 13.752 10.3014 13.752 10.5007C13.752 10.7 13.6728 10.8911 13.5319 11.0319C13.391 11.1728 13.1999 11.252 13.0007 11.252C12.8014 11.252 12.6103 11.1728 12.4694 11.0319L8.00003 6.56257L3.53065 11.0326C3.38976 11.1735 3.19866 11.2526 2.9994 11.2526C2.80015 11.2526 2.60905 11.1735 2.46815 11.0326C2.32726 10.8917 2.2481 10.7006 2.2481 10.5013C2.2481 10.3021 2.32726 10.111 2.46815 9.97007L2.4694 9.96945Z"
+                                    fill="black" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div
+                        class="flex gap-[15.5px] flex-wrap colors_list_wrapper overflow-hidden max-h-0 transition-all duration-[0.4s] colors_btn">
+
+                        <span class="relative top-0" data-color="red">
+                            <svg width="37" height="37" viewBox="0 0 37 37" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="18.5" cy="18.5001" r="18.5" fill="#00C12B" />
+                                <circle cx="18.5" cy="18.5001" r="17.5" stroke="black" stroke-opacity="0.2"
+                                    stroke-width="2" />
+                            </svg>
+                            <span class="absolute top-[10px] left-[10px] tick_icon_filter hidden">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14.5306 5.03063L6.5306 13.0306C6.46092 13.1005 6.37813 13.156 6.28696 13.1939C6.1958 13.2317 6.09806 13.2512 5.99935 13.2512C5.90064 13.2512 5.8029 13.2317 5.71173 13.1939C5.62057 13.156 5.53778 13.1005 5.4681 13.0306L1.9681 9.53063C1.89833 9.46087 1.84299 9.37804 1.80524 9.28689C1.76748 9.19574 1.74805 9.09804 1.74805 8.99938C1.74805 8.90072 1.76748 8.80302 1.80524 8.71187C1.84299 8.62072 1.89833 8.53789 1.9681 8.46813C2.03786 8.39837 2.12069 8.34302 2.21184 8.30527C2.30299 8.26751 2.40069 8.24808 2.49935 8.24808C2.59801 8.24808 2.69571 8.26751 2.78686 8.30527C2.87801 8.34302 2.96083 8.39837 3.0306 8.46813L5.99997 11.4375L13.4693 3.96938C13.6102 3.82848 13.8013 3.74933 14.0006 3.74933C14.1999 3.74933 14.391 3.82848 14.5318 3.96938C14.6727 4.11028 14.7519 4.30137 14.7519 4.50063C14.7519 4.69989 14.6727 4.89098 14.5318 5.03188L14.5306 5.03063Z"
+                                        fill="white" />
+                                </svg>
+                            </span>
+                        </span>
+                        <span class="relative top-0" data-color="yellow">
+                            <svg width="37" height="37" viewBox="0 0 37 37" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="18.5" cy="18.5001" r="18.5" fill="grey" />
+                                <circle cx="18.5" cy="18.5001" r="17.5" stroke="black" stroke-opacity="0.2"
+                                    stroke-width="2" />
+                            </svg>
+                            <span class="absolute top-[10px] left-[10px] tick_icon_filter hidden">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14.5306 5.03063L6.5306 13.0306C6.46092 13.1005 6.37813 13.156 6.28696 13.1939C6.1958 13.2317 6.09806 13.2512 5.99935 13.2512C5.90064 13.2512 5.8029 13.2317 5.71173 13.1939C5.62057 13.156 5.53778 13.1005 5.4681 13.0306L1.9681 9.53063C1.89833 9.46087 1.84299 9.37804 1.80524 9.28689C1.76748 9.19574 1.74805 9.09804 1.74805 8.99938C1.74805 8.90072 1.76748 8.80302 1.80524 8.71187C1.84299 8.62072 1.89833 8.53789 1.9681 8.46813C2.03786 8.39837 2.12069 8.34302 2.21184 8.30527C2.30299 8.26751 2.40069 8.24808 2.49935 8.24808C2.59801 8.24808 2.69571 8.26751 2.78686 8.30527C2.87801 8.34302 2.96083 8.39837 3.0306 8.46813L5.99997 11.4375L13.4693 3.96938C13.6102 3.82848 13.8013 3.74933 14.0006 3.74933C14.1999 3.74933 14.391 3.82848 14.5318 3.96938C14.6727 4.11028 14.7519 4.30137 14.7519 4.50063C14.7519 4.69989 14.6727 4.89098 14.5318 5.03188L14.5306 5.03063Z"
+                                        fill="white" />
+                                </svg>
+
+                            </span>
+                        </span> <span class="relative top-0" data-color="blue">
+                            <svg width="37" height="37" viewBox="0 0 37 37" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="18.5" cy="18.5001" r="18.5" fill="violet" />
+                                <circle cx="18.5" cy="18.5001" r="17.5" stroke="black" stroke-opacity="0.2"
+                                    stroke-width="2" />
+                            </svg>
+                            <span class="absolute top-[10px] left-[10px] tick_icon_filter hidden">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14.5306 5.03063L6.5306 13.0306C6.46092 13.1005 6.37813 13.156 6.28696 13.1939C6.1958 13.2317 6.09806 13.2512 5.99935 13.2512C5.90064 13.2512 5.8029 13.2317 5.71173 13.1939C5.62057 13.156 5.53778 13.1005 5.4681 13.0306L1.9681 9.53063C1.89833 9.46087 1.84299 9.37804 1.80524 9.28689C1.76748 9.19574 1.74805 9.09804 1.74805 8.99938C1.74805 8.90072 1.76748 8.80302 1.80524 8.71187C1.84299 8.62072 1.89833 8.53789 1.9681 8.46813C2.03786 8.39837 2.12069 8.34302 2.21184 8.30527C2.30299 8.26751 2.40069 8.24808 2.49935 8.24808C2.59801 8.24808 2.69571 8.26751 2.78686 8.30527C2.87801 8.34302 2.96083 8.39837 3.0306 8.46813L5.99997 11.4375L13.4693 3.96938C13.6102 3.82848 13.8013 3.74933 14.0006 3.74933C14.1999 3.74933 14.391 3.82848 14.5318 3.96938C14.6727 4.11028 14.7519 4.30137 14.7519 4.50063C14.7519 4.69989 14.6727 4.89098 14.5318 5.03188L14.5306 5.03063Z"
+                                        fill="white" />
+                                </svg>
+
+                            </span>
+                        </span> <span class="relative top-0" data-color="pink">
+                            <svg width="37" height="37" viewBox="0 0 37 37" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="18.5" cy="18.5001" r="18.5" fill="yellow" />
+                                <circle cx="18.5" cy="18.5001" r="17.5" stroke="black" stroke-opacity="0.2"
+                                    stroke-width="2" />
+                            </svg>
+                            <span class="absolute top-[10px] left-[10px] tick_icon_filter hidden">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14.5306 5.03063L6.5306 13.0306C6.46092 13.1005 6.37813 13.156 6.28696 13.1939C6.1958 13.2317 6.09806 13.2512 5.99935 13.2512C5.90064 13.2512 5.8029 13.2317 5.71173 13.1939C5.62057 13.156 5.53778 13.1005 5.4681 13.0306L1.9681 9.53063C1.89833 9.46087 1.84299 9.37804 1.80524 9.28689C1.76748 9.19574 1.74805 9.09804 1.74805 8.99938C1.74805 8.90072 1.76748 8.80302 1.80524 8.71187C1.84299 8.62072 1.89833 8.53789 1.9681 8.46813C2.03786 8.39837 2.12069 8.34302 2.21184 8.30527C2.30299 8.26751 2.40069 8.24808 2.49935 8.24808C2.59801 8.24808 2.69571 8.26751 2.78686 8.30527C2.87801 8.34302 2.96083 8.39837 3.0306 8.46813L5.99997 11.4375L13.4693 3.96938C13.6102 3.82848 13.8013 3.74933 14.0006 3.74933C14.1999 3.74933 14.391 3.82848 14.5318 3.96938C14.6727 4.11028 14.7519 4.30137 14.7519 4.50063C14.7519 4.69989 14.6727 4.89098 14.5318 5.03188L14.5306 5.03063Z"
+                                        fill="white" />
+                                </svg>
+
+                            </span>
+                        </span> <span class="relative top-0" data-color="grey">
+                            <svg width="37" height="37" viewBox="0 0 37 37" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="18.5" cy="18.5001" r="18.5" fill="blue" />
+                                <circle cx="18.5" cy="18.5001" r="17.5" stroke="black" stroke-opacity="0.2"
+                                    stroke-width="2" />
+                            </svg>
+                            <span class="absolute top-[10px] left-[10px] tick_icon_filter hidden">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14.5306 5.03063L6.5306 13.0306C6.46092 13.1005 6.37813 13.156 6.28696 13.1939C6.1958 13.2317 6.09806 13.2512 5.99935 13.2512C5.90064 13.2512 5.8029 13.2317 5.71173 13.1939C5.62057 13.156 5.53778 13.1005 5.4681 13.0306L1.9681 9.53063C1.89833 9.46087 1.84299 9.37804 1.80524 9.28689C1.76748 9.19574 1.74805 9.09804 1.74805 8.99938C1.74805 8.90072 1.76748 8.80302 1.80524 8.71187C1.84299 8.62072 1.89833 8.53789 1.9681 8.46813C2.03786 8.39837 2.12069 8.34302 2.21184 8.30527C2.30299 8.26751 2.40069 8.24808 2.49935 8.24808C2.59801 8.24808 2.69571 8.26751 2.78686 8.30527C2.87801 8.34302 2.96083 8.39837 3.0306 8.46813L5.99997 11.4375L13.4693 3.96938C13.6102 3.82848 13.8013 3.74933 14.0006 3.74933C14.1999 3.74933 14.391 3.82848 14.5318 3.96938C14.6727 4.11028 14.7519 4.30137 14.7519 4.50063C14.7519 4.69989 14.6727 4.89098 14.5318 5.03188L14.5306 5.03063Z"
+                                        fill="white" />
+                                </svg>
+
+                            </span>
+                        </span> <span class="relative top-0" data-color="orange">
+                            <svg width="37" height="37" viewBox="0 0 37 37" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="18.5" cy="18.5001" r="18.5" fill="red" />
+                                <circle cx="18.5" cy="18.5001" r="17.5" stroke="black" stroke-opacity="0.2"
+                                    stroke-width="2" />
+                            </svg>
+                            <span class="absolute top-[10px] left-[10px] tick_icon_filter hidden">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14.5306 5.03063L6.5306 13.0306C6.46092 13.1005 6.37813 13.156 6.28696 13.1939C6.1958 13.2317 6.09806 13.2512 5.99935 13.2512C5.90064 13.2512 5.8029 13.2317 5.71173 13.1939C5.62057 13.156 5.53778 13.1005 5.4681 13.0306L1.9681 9.53063C1.89833 9.46087 1.84299 9.37804 1.80524 9.28689C1.76748 9.19574 1.74805 9.09804 1.74805 8.99938C1.74805 8.90072 1.76748 8.80302 1.80524 8.71187C1.84299 8.62072 1.89833 8.53789 1.9681 8.46813C2.03786 8.39837 2.12069 8.34302 2.21184 8.30527C2.30299 8.26751 2.40069 8.24808 2.49935 8.24808C2.59801 8.24808 2.69571 8.26751 2.78686 8.30527C2.87801 8.34302 2.96083 8.39837 3.0306 8.46813L5.99997 11.4375L13.4693 3.96938C13.6102 3.82848 13.8013 3.74933 14.0006 3.74933C14.1999 3.74933 14.391 3.82848 14.5318 3.96938C14.6727 4.11028 14.7519 4.30137 14.7519 4.50063C14.7519 4.69989 14.6727 4.89098 14.5318 5.03188L14.5306 5.03063Z"
+                                        fill="white" />
+                                </svg>
+
+                            </span>
+                        </span>
+                    </div>
+                </div>
+                <div
+                    class="pt-[20px] md:pt-[24px] md:pb-[24px] pb-[20px] border-b-[1px] border-black/10 flex flex-col gap-[16px] md:gap-[20px]">
+                    <div class="size_filter_wrapper flex items-center justify-between">
+                        <h1 class="font-satoshibold text-[#000000] opacity-[100%] text-[20px]">Size</h1>
+                        <span>
+                            <svg class="accordian_size size_arrow transition-all duration-1000" width="16" height="17"
+                                viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.4694 9.96945L7.4694 4.96945C7.53908 4.89953 7.62187 4.84405 7.71304 4.8062C7.8042 4.76834 7.90194 4.74886 8.00065 4.74886C8.09936 4.74886 8.1971 4.76834 8.28827 4.8062C8.37943 4.84405 8.46222 4.89953 8.5319 4.96945L13.5319 9.96945C13.6728 10.1103 13.752 10.3014 13.752 10.5007C13.752 10.7 13.6728 10.8911 13.5319 11.0319C13.391 11.1728 13.1999 11.252 13.0007 11.252C12.8014 11.252 12.6103 11.1728 12.4694 11.0319L8.00003 6.56257L3.53065 11.0326C3.38976 11.1735 3.19866 11.2526 2.9994 11.2526C2.80015 11.2526 2.60905 11.1735 2.46815 11.0326C2.32726 10.8917 2.2481 10.7006 2.2481 10.5013C2.2481 10.3021 2.32726 10.111 2.46815 9.97007L2.4694 9.96945Z"
+                                    fill="black" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div
+                        class="flex flex-wrap gap-[8px] size_btn size_list_wrapper overflow-hidden transition duration-1000 max-h-0 ">
+                        <button value="XX-Small"
+                            class="font-satoshiregular  transition duration-400  text-[14px] text-[#000000] opacity-[60%] bg-bggray py-[10px] px-[20px] rounded-[62px]">XX-Small</button>
+                        <button value="X-Small"
+                            class="font-satoshiregular  transition duration-400  text-[14px] text-[#000000] opacity-[60%] bg-bggray py-[10px] px-[20px] rounded-[62px]">x-small</button>
+                        <button value="Small"
+                            class="font-satoshiregular  transition duration-400  text-[14px] text-[#000000] opacity-[60%] bg-bggray py-[10px] px-[20px] rounded-[62px]">Small</button>
+                        <button value="Medium"
+                            class="font-satoshiregular  transition duration-400  text-[14px] text-[#000000] opacity-[60%] bg-bggray py-[10px] px-[20px] rounded-[62px]">Medium</button>
+                        <button value="XX-Small"
+                            class="font-satoshiregular  transition duration-400  text-[14px] text-[#000000] opacity-[60%] bg-bggray  py-[10px] px-[20px] rounded-[62px]">XX-Small</button>
+                        <button value="X-Large"
+                            class="font-satoshiregular  transition duration-400  text-[14px] text-[#000000] opacity-[60%] bg-bggray py-[10px] px-[20px] rounded-[62px]">X-Large</button>
+                        <button value="XX-Large"
+                            class="font-satoshiregular  transition duration-400  text-[14px] text-[#000000] opacity-[60%] bg-bggray py-[10px] px-[20px] rounded-[62px]">XX-Large</button>
+                        <button value="3X-Large"
+                            class="font-satoshiregular  transition duration-400  text-[14px] text-[#000000] opacity-[60%] bg-bggray py-[10px] px-[20px] rounded-[62px]">3X-Large</button>
+                        <button value="4X-Large"
+                            class="font-satoshiregular  transition duration-400  text-[14px] text-[#000000] opacity-[60%] bg-bggray py-[10px] px-[20px] rounded-[62px]">4X-Large</button>
+
+                    </div>
+                </div>
+                <div class="pt-[20px] md:pt-[24px] pb-[20px] md:pb-[24px] flex flex-col gap-[20px]  ">
+                    <div class="flex justify-between flex-col color_filter_wrapper">
+                        <div class="dressstyle_wrapper flex justify-between items-center mb-[16px] md:mb-[20px]  ">
+                            <h1 class="font-satoshibold text-[#000000] opacity-[100%] text-[20px] cursor-pointer">Dress
+                                Style</h1>
+                            <span>
+                                <svg class="accordian_dressstyle accordian_arrow transition-all duration-1000 accordian_icon"
+                                    width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2.4694 9.96939L7.4694 4.96939C7.53908 4.89947 7.62187 4.84399 7.71304 4.80614C7.8042 4.76828 7.90194 4.7488 8.00065 4.7488C8.09936 4.7488 8.1971 4.76828 8.28827 4.80614C8.37943 4.84399 8.46222 4.89947 8.5319 4.96939L13.5319 9.96939C13.6728 10.1103 13.752 10.3014 13.752 10.5006C13.752 10.6999 13.6728 10.891 13.5319 11.0319C13.391 11.1728 13.1999 11.2519 13.0007 11.2519C12.8014 11.2519 12.6103 11.1728 12.4694 11.0319L8.00003 6.56251L3.53065 11.0325C3.38976 11.1734 3.19866 11.2526 2.9994 11.2526C2.80015 11.2526 2.60905 11.1734 2.46815 11.0325C2.32726 10.8916 2.2481 10.7005 2.2481 10.5013C2.2481 10.302 2.32726 10.1109 2.46815 9.97001L2.4694 9.96939Z"
+                                        fill="black" />
+                                </svg>
+                            </span>
+                        </div>
+
+                        <ul
+                            class="dressstyle_list_wrapper flex flex-col gap-[20px] transition duration-1000 max-h-0 overflow-hidden cursor-pointer ">
+                            <li
+                                class=" flex justify-between items-center flex-col font-satoshiregular  text-[16px] text-[#000000] opacity-[60%]">
+                                <div class="flex w-[100%] justify-between dress_style_btn_open ">
+
+
+                                    <p>Dress Styles</p>
+                                    <span>
+                                        <svg class="accordian_icon_dress  transition duration-1000" width="16"
+                                            height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M6.53073 2.4694L11.5307 7.4694C11.6007 7.53908 11.6561 7.62187 11.694 7.71304C11.7318 7.8042 11.7513 7.90194 11.7513 8.00065C11.7513 8.09936 11.7318 8.1971 11.694 8.28827C11.6561 8.37943 11.6007 8.46222 11.5307 8.5319L6.53073 13.5319C6.38984 13.6728 6.19874 13.752 5.99948 13.752C5.80023 13.752 5.60913 13.6728 5.46823 13.5319C5.32734 13.391 5.24818 13.1999 5.24818 13.0007C5.24818 12.8014 5.32734 12.6103 5.46823 12.4694L9.93761 8.00003L5.46761 3.53065C5.32671 3.38976 5.24756 3.19866 5.24756 2.9994C5.24756 2.80015 5.32671 2.60905 5.46761 2.46815C5.60851 2.32726 5.7996 2.2481 5.99886 2.2481C6.19812 2.2481 6.38921 2.32726 6.53011 2.46815L6.53073 2.4694Z"
+                                                fill="black" fill-opacity="0.6" />
+                                        </svg>
+                                    </span>
+                                </div>
+                                <ul
+                                    class="text-left w-[100%]   flex flex-col gap-[10px]  dress_style_btn max-h-0 transition-all duration-1000 overflow-hidden ">
+                                    <li data-style="Witch Style"
+                                        class="border-b-[1px] border-black/10 p-[5px] text-[#000000] opacity-[100%] hover:text-black hover:font-satoshimedium">
+                                        Witch Style</li>
+
+                                    <li data-style="formal"
+                                        class="border-b-[1px] border-black/10 p-[5px] text-[#000000] opacity-[100%] hover:text-black hover:font-satoshimedium">
+                                        Formal</li>
+
+                                    <li data-style="Professional"
+                                        class="border-b-[1px] border-black/10 p-[5px] text-[#000000] opacity-[100%] hover:text-black hover:font-satoshimedium">
+                                        Professional</li>
+
+                                    <li data-style="party"
+                                        class="border-b-[1px] border-black/10 p-[5px] text-[#000000] opacity-[100%] hover:text-black hover:font-satoshimedium">
+                                        Party</li>
+
+
+
+                                </ul>
+                            </li>
+                            <li
+                                class=" flex justify-between items-center flex-col font-satoshiregular text-[16px] text-[#000000] opacity-[60%]">
+                                <div class="flex w-[100%] justify-between dress_style_btn_open">
+
+
+                                    <p>Shoe Types</p>
+
+                                    <span>
+                                        <svg class="accordian_icon_dress transition duration-1000" width="16"
+                                            height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M6.53073 2.4694L11.5307 7.4694C11.6007 7.53908 11.6561 7.62187 11.694 7.71304C11.7318 7.8042 11.7513 7.90194 11.7513 8.00065C11.7513 8.09936 11.7318 8.1971 11.694 8.28827C11.6561 8.37943 11.6007 8.46222 11.5307 8.5319L6.53073 13.5319C6.38984 13.6728 6.19874 13.752 5.99948 13.752C5.80023 13.752 5.60913 13.6728 5.46823 13.5319C5.32734 13.391 5.24818 13.1999 5.24818 13.0007C5.24818 12.8014 5.32734 12.6103 5.46823 12.4694L9.93761 8.00003L5.46761 3.53065C5.32671 3.38976 5.24756 3.19866 5.24756 2.9994C5.24756 2.80015 5.32671 2.60905 5.46761 2.46815C5.60851 2.32726 5.7996 2.2481 5.99886 2.2481C6.19812 2.2481 6.38921 2.32726 6.53011 2.46815L6.53073 2.4694Z"
+                                                fill="black" fill-opacity="0.6" />
+                                        </svg>
+                                    </span>
+                                </div>
+                                <ul
+                                    class="text-left w-[100%]   flex flex-col gap-[10px] max-h-0 transition-all duration-1000 overflow-hidden dress_style_btn">
+                                    <li data-style="winterwear"
+                                        class="border-b-[1px] border-black/10 p-[5px] text-[#000000] opacity-[100%] hover:text-black hover:font-satoshimedium">
+                                        Winterwear</li>
+
+                                    <li data-style="streetwear"
+                                        class="border-b-[1px] border-black/10 p-[5px] text-[#000000] opacity-[100%] hover:text-black hover:font-satoshimedium">
+                                        Streetwear</li>
+
+                                    <li data-style="loungewear"
+                                        class="border-b-[1px] border-black/10 p-[5px] text-[#000000] opacity-[100%] hover:text-black hover:font-satoshimedium">
+                                        Loungewear</li>
+
+                                    <li data-style="dailywear"
+                                        class="border-b-[1px] border-black/10 p-[5px] text-[#000000] opacity-[100%] hover:text-black hover:font-satoshimedium">
+                                        Dailywear</li>
+
+
+
+
+                                </ul>
+                            </li>
+                            <li
+                                class=" flex justify-between items-center flex-col font-satoshiregular text-[16px] text-[#000000] opacity-[60%]">
+                                <div class="flex w-[100%] justify-between dress_style_btn_open">
+
+
+                                    <p>Top Wear</p>
+
+                                    <span>
+                                        <svg class="accordian_icon_dress transition duration-1000" width="16"
+                                            height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M6.53073 2.4694L11.5307 7.4694C11.6007 7.53908 11.6561 7.62187 11.694 7.71304C11.7318 7.8042 11.7513 7.90194 11.7513 8.00065C11.7513 8.09936 11.7318 8.1971 11.694 8.28827C11.6561 8.37943 11.6007 8.46222 11.5307 8.5319L6.53073 13.5319C6.38984 13.6728 6.19874 13.752 5.99948 13.752C5.80023 13.752 5.60913 13.6728 5.46823 13.5319C5.32734 13.391 5.24818 13.1999 5.24818 13.0007C5.24818 12.8014 5.32734 12.6103 5.46823 12.4694L9.93761 8.00003L5.46761 3.53065C5.32671 3.38976 5.24756 3.19866 5.24756 2.9994C5.24756 2.80015 5.32671 2.60905 5.46761 2.46815C5.60851 2.32726 5.7996 2.2481 5.99886 2.2481C6.19812 2.2481 6.38921 2.32726 6.53011 2.46815L6.53073 2.4694Z"
+                                                fill="black" fill-opacity="0.6" />
+                                        </svg>
+                                    </span>
+                                </div>
+                                <ul
+                                    class="text-left w-[100%]   flex flex-col gap-[10px]  max-h-0  transition-all duration-1000 overflow-hidden dress_style_btn">
+                                    <li data-style="black boots"
+                                        class="border-b-[1px] border-black/10 p-[5px] text-[#000000] opacity-[100%] hover:text-black hover:font-satoshimedium">
+                                        Boots</li>
+
+                                    <li data-style="traditional"
+                                        class="border-b-[1px] border-black/10 p-[5px] text-[#000000] opacity-[100%] hover:text-black hover:font-satoshimedium">
+                                        Traditional</li>
+
+                                    <li data-style="beach dress"
+                                        class="border-b-[1px] border-black/10 p-[5px] text-[#000000] opacity-[100%] hover:text-black hover:font-satoshimedium">
+                                        beach dress</li>
+
+                                    <li data-style="Heels"
+                                        class="border-b-[1px] border-black/10 p-[5px] text-[#000000] opacity-[100%] hover:text-black hover:font-satoshimedium">
+                                        Heels</li>
+
+
+
+
+                                </ul>
+                            </li>
+                            <li
+                                class=" flex justify-between items-center flex-col font-satoshiregular text-[16px] text-[#000000] opacity-[60%]">
+                                <div class="flex w-[100%] justify-between dress_style_btn_open">
+
+
+                                    <p>Accessories</p>
+
+                                    <span>
+                                        <svg class="accordian_icon_dress transition duration-1000" width="16"
+                                            height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M6.53073 2.4694L11.5307 7.4694C11.6007 7.53908 11.6561 7.62187 11.694 7.71304C11.7318 7.8042 11.7513 7.90194 11.7513 8.00065C11.7513 8.09936 11.7318 8.1971 11.694 8.28827C11.6561 8.37943 11.6007 8.46222 11.5307 8.5319L6.53073 13.5319C6.38984 13.6728 6.19874 13.752 5.99948 13.752C5.80023 13.752 5.60913 13.6728 5.46823 13.5319C5.32734 13.391 5.24818 13.1999 5.24818 13.0007C5.24818 12.8014 5.32734 12.6103 5.46823 12.4694L9.93761 8.00003L5.46761 3.53065C5.32671 3.38976 5.24756 3.19866 5.24756 2.9994C5.24756 2.80015 5.32671 2.60905 5.46761 2.46815C5.60851 2.32726 5.7996 2.2481 5.99886 2.2481C6.19812 2.2481 6.38921 2.32726 6.53011 2.46815L6.53073 2.4694Z"
+                                                fill="black" fill-opacity="0.6" />
+                                        </svg>
+                                    </span>
+                                </div>
+                                <ul
+                                    class="text-left w-[100%]   flex flex-col gap-[10px]  max-h-0 transition-all duration-1000 overflow-hidden dress_style_btn">
+                                    <li data-style="winterwear"
+                                        class="border-b-[1px] border-black/10 p-[5px] text-[#000000] opacity-[100%] hover:text-black hover:font-satoshimedium">
+                                        Retro</li>
+
+                                    <li data-style="formal"
+                                        class="border-b-[1px] border-black/10 p-[5px] text-[#000000] opacity-[100%] hover:text-black hover:font-satoshimedium">
+                                        Classic</li>
+
+                                    <li data-style="professional"
+                                        class="border-b-[1px] border-black/10 p-[5px] text-[#000000] opacity-[100%] hover:text-black hover:font-satoshimedium">
+                                        Coats</li>
+
+                                    <li data-style="beach dress"
+                                        class="border-b-[1px] border-black/10 p-[5px] text-[#000000] opacity-[100%] hover:text-black hover:font-satoshimedium">
+                                        Vacation</li>
+
+
+
+                                </ul>
+                            </li>
+                            <li
+                                class=" flex justify-between items-center flex-col font-satoshiregular text-[16px] text-[#000000] opacity-[60%]">
+                                <div class="flex w-[100%] justify-between dress_style_btn_open">
+                                    <p>Special's</p>
+                                    <span>
+                                        <svg class="accordian_icon_dress transition duration-1000" width="16"
+                                            height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M6.53073 2.4694L11.5307 7.4694C11.6007 7.53908 11.6561 7.62187 11.694 7.71304C11.7318 7.8042 11.7513 7.90194 11.7513 8.00065C11.7513 8.09936 11.7318 8.1971 11.694 8.28827C11.6561 8.37943 11.6007 8.46222 11.5307 8.5319L6.53073 13.5319C6.38984 13.6728 6.19874 13.752 5.99948 13.752C5.80023 13.752 5.60913 13.6728 5.46823 13.5319C5.32734 13.391 5.24818 13.1999 5.24818 13.0007C5.24818 12.8014 5.32734 12.6103 5.46823 12.4694L9.93761 8.00003L5.46761 3.53065C5.32671 3.38976 5.24756 3.19866 5.24756 2.9994C5.24756 2.80015 5.32671 2.60905 5.46761 2.46815C5.60851 2.32726 5.7996 2.2481 5.99886 2.2481C6.19812 2.2481 6.38921 2.32726 6.53011 2.46815L6.53073 2.4694Z"
+                                                fill="black" fill-opacity="0.6" />
+                                        </svg>
+                                    </span>
+                                </div>
+                                <ul
+                                    class="text-left w-[100%]   flex flex-col gap-[10px]  max-h-0  transition-all duration-1000 overflow-hidden dress_style_btn">
+                                    <!-- adas -->
+                                    <li data-style="nightwear"
+                                        class="border-b-[1px] border-black/10 p-[5px] text-[#000000] opacity-[100%] hover:text-black hover:font-satoshimedium">
+                                        Nightwear</li>
+                                    <li data-style="beachwear"
+                                        class="border-b-[1px] border-black/10 p-[5px] text-[#000000] opacity-[100%] hover:text-black hover:font-satoshimedium">
+                                        Miami Special</li>
+                                    <li data-style="yogawear"
+                                        class="border-b-[1px] border-black/10 p-[5px] text-[#000000] opacity-[100%] hover:text-black hover:font-satoshimedium">
+                                        Yogawear</li>
+                                    <li data-style="ethnic"
+                                        class="border-b-[1px] border-black/10 p-[5px] text-[#000000] opacity-[100%] hover:text-black hover:font-satoshimedium">
+                                        Ethnic</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="pb-[9px] w-[100%] h-[150px]">
+                    <button
+                        class="apply_filter apply_filter_btn_mobile font-satoshimedium w-[100%] text-[14px] text-secondary opacity-[100%] bg-[#000000] py-[16px] md:py-[10px] px-[20px] md:px-[54px] rounded-[62px]">Apply
+                        Filter
+                    </button>
+                </div>
+                <div class="pb-[9px] w-[100%] h-[150px] mt-[-90px]">
+                    <button
+                        class="clear_filter_btn clear_filter_btn font-satoshimedium w-[100%]  text-[14px] text-secondary opacity-[100%] bg-[#000000] py-[16px] md:py-[10px] px-[20px] md:px-[54px] rounded-[62px]">Clear
+                        Filter
+                    </button>
+                </div>
+            </div>
+            <!-- for slider -->
+        </div>
+    </div>
+    <script>
+        fetch("../../components/categoryslider.html")
+            .then(response => response.text())
+            .then(data => {
+                // console.log(data);
+                var category_slider_section = document.querySelector(".category_page_filter_section");
+                category_slider_section.innerHTML += data;
+                var script = document.createElement('script');
+                script.src = "./category.js"
+                document.body.appendChild(script);
+
+            })
+
+    </script>
+
+    <!-- footer -->
+    <footer class="footer bg-bggray lg:px-[50px] 2xl:px-[100px]">
+        <script>
+            fetch("../../components/footer.html")
+                .then(res => res.text())
+                .then(data => {
+                    var footer_section = document.querySelector(".footer");
+                    footer_section.innerHTML = data;
+                })
+        </script>
+    </footer>
+</body>
+
+</html>

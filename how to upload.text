@@ -1,0 +1,229 @@
+git add . 
+git commit -m "first commit"
+git push -u origin master
+
+git clone https://singhshub@bitbucket.org/by-shavinder/e-commerce.git
+
+tailwind
+npx tailwindcss -i ./src/style.css -o ./src/output.css --watch 
+-----------------------------------------------------------------------------------------------------------------------
+How to first upload
+git init
+git add .
+git commit -m "first commit"
+git status
+git remote add origin https://singhshub@bitbucket.org/by-shavinder/e-commerce.git
+git push -f origin master
+
+
+
+
+# @tailwind base;
+# @tailwind components;
+# @tailwind utilities;
+
+# @layer components {
+#   .btn-main {
+#     @apply bg-blue-600 text-white px-3 py-1 rounded transition hover:bg-blue-700;
+
+#     @apply sm:px-4 sm:py-2;
+#     @apply lg:px-6 lg:py-3;
+#   }
+# }
+
+https://www.figma.com/design/SeiYPILaLBisL0omII1pVc/E-commerce-Website-Template--Freebie---Community-?node-id=0-1&p=f&t=INPXk9mZqjjHlxaW-0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="main_section">
+        <div class="main_container">
+            <div
+                class="main_header bg-mainbg opacity-[100%] md:flex  md:relative 2xl:px-[100px] md:pb-[90px] lg:pb-[116px] 2xl:pb-[116px]">
+                <div class=" z-10">
+                    <div class="pt-[40px]">
+                        <div
+                            class="main_content mb-[20px] 2xl:mb-[32px] xs:max-w-[90%]  sm:max-w-[80%] md:max-w-[100%] pl-[16px] lg:pl-[50px] 2xl:px-0">
+                            <h1
+                                class=" font-integral font-bold  text-[36px] lg:text-[42px] 2xl:text-[64px] lg:leading-[39px] 2xl:leading-[64px] leading-[34px]  text-primary bg-mainbg opacity-[100%]   max-w-[90%] md:max-w-[50%]">
+                                FIND
+                                CLOTHES
+                                THAT MATCHES YOUR STYLE</h1>
+                        </div>
+                        <div
+                            class="mb-[24px] 2xl:mb-[21px] px-[16px] lg:pl-[50px] xs:max-w-[90%] sm:max-w-[80%] md:max-w-[50%] 2xl:px-0">
+                            <p
+                                class="font-satoshi leading-[20px] text-[14px] lg:text-[16px] text-customGray  opacity-[60%]">
+                                Browse
+                                through our diverse range of meticulously crafted garments, designed to bring out your
+                                individuality and cater to your sense of style.
+                            </p>
+                        </div>
+                        <div
+                            class="mb-[20px] 2xl:mb-[48px] px-[16px] lg:pl-[50px] sm:max-w-[50%] md:max-w-[50%] lg:max-w-[35%] 2xl:max-w-[213px] 2xl:px-0">
+                            <button
+                                class="bg-primary text-secondary  text-[16px] lg:text-[16px] py-[16px] px-[54px] w-[100%] rounded-[62px] opacity-[100%] font-satoshi font-medium leading-[auto]">Shop
+                                Now</button>
+                        </div>
+                    </div>
+                    <div class="analytics_main w-[100%] px-[56px] md:px-[16px] lg:pl-[50px] 2xl:px-0">
+                        <div class="flex gap-10 items-center justify-center md:justify-normal  w-[100%] pb-[12px]">
+                            <div class="text-center ">
+                                <h1
+                                    class="font-satoshibold font-bold text-[24px] lg:text-[30px] 2xl:text-[40px] text-primary">
+                                    200+
+                                </h1>
+                                <p
+                                    class="font-satoshi font-customGray opacity-[60%] text-[12px] text-nowrap 2xl:text-[16px]">
+                                    International Brands</p>
+                            </div>
+                            <div class=" w-[1px] h-[10vh] bg-custom-gray opacity-[10%]">
+
+                            </div>
+                            <div class="text-center ">
+                                <h1
+                                    class="font-satoshibold font-bold text-[24px] lg:text-[30px] 2xl:text-[40px] text-primary">
+                                    2,000+
+                                </h1>
+                                <p
+                                    class="font-satoshi font-customGray opacity-[60%] text-[12px] text-nowrap 2xl:text-[16px]">
+                                    High-Quality Products</p>
+                            </div>
+                            <div class=" w-[1px] h-[10vh] bg-custom-gray opacity-[10%] hidden lg:flex">
+
+                            </div>
+                            <div class="text-center hidden lg:flex   flex-col">
+                                <h1
+                                    class="font-satoshibold font-bold text-[24px] lg:text-[30px] 2xl:text-[40px] text-primary">
+                                    30,000+
+                                </h1>
+                                <p
+                                    class="font-satoshi font-customGray opacity-[60%] text-[12px] text-nowrap 2xl:text-[16px]">
+                                    Happy
+                                    Customers</p>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="text-center md:hidden">
+                            <h1 class="font-satoshibold font-bold text-[24px] text-primary">30,000+</h1>
+                            <p class="font-satoshi font-customGray opacity-[60%] text-[12px] text-nowrap">Happy
+                                Customers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute top-0 left-0 w-[100%] h-[100%] hidden md:flex">
+
+                    <img src="../assets/images/bigmain.png" alt="main_image"
+                        class="w-[100%] h-[100%] object-contain px-[20px] lg:px-[50px] 2xl:px-0">
+                    <div class=" absolute top-[40%] right-[44%] 2xl:top-[297px] 2xl:right-[634px]">
+                        <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M28 0C28.9506 15.0527 40.9472 27.0495 56 28C40.9472 28.9506 28.9506 40.9472 28 56C27.0495 40.9472 15.0527 28.9506 0 28C15.0527 27.0495 27.0495 15.0527 28 0Z"
+                                fill="black" />
+                        </svg>
+                    </div>
+                    <div class="absolute top-[49px] right-[42px] 2xl:top-[86px] 2xl:right-[80px]">
+                        <svg width="104" height="104" viewBox="0 0 104 104" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M52 0C53.7654 27.955 76.0448 50.2347 104 52C76.0448 53.7654 53.7654 76.0448 52 104C50.2347 76.0448 27.955 53.7654 0 52C27.955 50.2347 50.2347 27.955 52 0Z"
+                                fill="black" />
+                        </svg>
+
+                    </div>
+
+                </div>
+
+                <!-- image main mobile -->
+                <div class="relative top-0 md:hidden">
+                    <img src="../assets/images/Rectangle2.png" alt="main_image" class="w-[100%]">
+                    <div class="absolute top-[137px] left-[27px]">
+                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22 0C22.7469 11.8271 32.1728 21.2531 44 22C32.1728 22.7469 22.7469 32.1728 22 44C21.2531 32.1728 11.8271 22.7469 0 22C11.8271 21.2531 21.2531 11.8271 22 0Z"
+                                fill="black" />
+                        </svg>
+                    </div>
+                    <div class="absolute top-[40px] right-0">
+                        <svg width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M38 0C39.2901 20.4286 55.5712 36.71 76 38C55.5712 39.2901 39.2901 55.5712 38 76C36.71 55.5712 20.4286 39.2901 0 38C20.4286 36.71 36.71 20.4286 38 0Z"
+                                fill="black" />
+                        </svg>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="main_footer">
+                <div
+                    class="bg-primary flex flex-wrap justify-evenly  w-[100%] px-[16px] py-[40.4px] gap-[34px] lg:px-[80px] 2xl:px-[101.73px]">
+                    <div class="w-[82px] h-[21px] lg:w-[120px] h-[25px]">
+                        <img src="../assets/images/versace.png" alt="versace"
+                            class=" w-[82px] h-[21px] lg:w-[120px] h-[25px]">
+                    </div>
+                    <div class="w-[82px] h-[21px] lg:w-[120px] h-[25px]">
+                        <img src="../assets/images/zara.png" alt="zara"
+                            class=" w-[82px] h-[21px] lg:w-[120px] h-[25px]">
+                    </div>
+                    <div class="w-[82px] h-[21px] lg:w-[120px] h-[25px]">
+                        <img src="../assets/images/gucci.png" alt="gucci"
+                            class=" w-[82px] h-[21px] lg:w-[120px] h-[25px]">
+                    </div>
+                    <div class="w-[82px] h-[21px] lg:w-[120px] h-[25px]">
+                        <img src="../assets/images/prada.png" alt="prada"
+                            class=" w-[82px] h-[21px] lg:w-[120px] h-[25px]">
+                    </div>
+                    <div class="w-[82px] h-[21px] lg:w-[120px] h-[25px]">
+                        <img src="../assets/images/calvin.png" alt="calvin"
+                            class=" w-[82px] h-[21px] lg:w-[120px] h-[25px]">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>

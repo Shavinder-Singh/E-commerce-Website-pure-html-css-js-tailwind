@@ -1,0 +1,150 @@
+@import "tailwindcss";
+
+@config "../tailwind.config.js";
+
+
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+@font-face {
+    font-family: 'integral';
+    src: url('/src/assets/fonts/Integral-CF/Demo_Fonts/Fontspring-DEMO-integralcf-bold.otf');
+    font-weight: 900;
+    font-style: normal;
+    font-display: auto;
+}
+
+
+
+
+
+
+@font-face {
+    font-family: 'satoshi';
+    src: url('/src/assets/fonts/satoshi/Satoshi-Regular.otf');
+    font-weight: 100;
+    font-style: normal;
+    font-display: auto;
+}
+
+
+@font-face {
+    font-family: 'satoshimedium';
+    src: url('/src/assets/fonts/satoshi/Satoshi-Medium.otf');
+    font-weight: 100;
+    font-style: normal;
+    font-display: auto;
+}
+
+@font-face {
+    font-family: 'satoshiregular';
+    src: url('/src/assets/fonts/satoshi/Satoshi-Regular.otf');
+    font-weight: 900;
+    font-display: auto;
+
+}
+
+@font-face {
+    font-family: 'satoshiBold';
+    src: url('/src/assets/fonts/satoshi/Satoshi-Bold.otf');
+    font-weight: 100;
+    font-style: normal;
+    font-display: auto;
+}
+
+::-webkit-scrollbar {
+    /* display: none; */
+}
+
+.swiper_slider {
+    overflow-y: auto;
+}
+
+li {
+    list-style: none;
+}
+
+.search_slider .swiper-pagination {
+    display: none;
+}
+
+.account_icon::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    height: 20px;
+    width: 60px;
+    z-index: 999;
+
+}
+
+/* Target ONLY the close button of this specific input using its ID or class */
+
+
+.mysearchbar_second::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
+
+.mysearchbar_third::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    height: 16px;
+    width: 16px;
+    background: url('./assets/images/closeiconsearchbar.png') no-repeat center center;
+    background-size: contain;
+    cursor: pointer;
+}
+
+
+.announcement_bar::-webkit-scrollbar {
+    display: none;
+}
+
+.cart_Sidebar_products {
+    height: 100%;
+    overflow: scroll;
+}
+
+.shop_nav_laptop:hover .submenu_shop {
+    display: block;
+    pointer-events: auto;
+}
+
+.shop_nav_laptop::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: 30px;
+}
+
+
+.submenu_shop {
+    pointer-events: auto;
+}
+
+.cart_Sidebar_products::-webkit-scrollbar {
+    visibility: hidden;
+}
+
+.fade_wrapper_cart::before {
+    content: " ";
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100vw;
+    z-index: 999;
+    left: 100%;
+    position: fixed;
+    top: -100px;
+    left: 0;
+    height: 300vh;
+}

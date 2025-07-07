@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product detail </title>
+    <link rel="stylesheet" href="../../output.css">
+    <link rel="stylesheet" href="./productdetail.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../components/comopnents styles/component.css">
+    <script src="../../assets/swiper-11.2.8/package/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <section
+        class="announcement_bar font-satoshi bg-primary flex justify-center items-center h-[43px] vm:h-[34px]  overflow-scroll px-[44.5px]">
+    </section>
+    <script>
+        fetch('../../components/announcementbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector(".announcement_bar").innerHTML = data;
+
+                var script = document.createElement('script');
+                script.src = '../../components/componentsJs/announcement.js';
+                document.body.appendChild(script);
+            })
+    </script>
+    <!-- navbar -->
+    <div id="navbar_mobile">
+    </div>
+    <div
+        class="swiper_slider search_bar_items_wrapper px-[16px] md:px-[50px] 2xl:px-[100px] hidden absolute top-[114px] bg-white text-black  p-[10px] left-0 h-[100%] z-[999] md:top-[127px] lg:top-[128px] 2xl:top-[129px] w-[100%]">
+    </div>
+    <script>
+
+
+        fetch('../../components/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar_mobile").innerHTML = data;
+
+                    
+                var script = document.createElement('script');
+                script.src = "../../components/componentsJs/navbar.js"
+                document.body.appendChild(script);
+
+            });
+
+        fetch('../../components/searchslider.html')
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector(".swiper_slider").innerHTML = data;
+
+            });
+
+    </script>
+
+
+
+
+    <!-- each product Showing Detail section  -->
+    <section class="product_detail_section mb-[50px] lg:mb-[80px]">
+        <div class="px-[16px] lg:px-[50px] 2xl:px-[100px]">
+            <div class="border-t-[1px] border-black/10 pt-[20px] mb-[20px]">
+                <ul class="flex gap-[6px]">
+                    <li
+                        class="flex items-center gap-[4px] font-satoshiregular text-[14px] text-[#000000] opacity-[60%]">
+                        Home
+                        <span>
+                            <svg width="14" height="15" viewBox="0 0 14 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.71433 2.6607L10.0893 7.0357C10.1505 7.09666 10.1991 7.16911 10.2322 7.24888C10.2653 7.32865 10.2823 7.41417 10.2823 7.50054C10.2823 7.58691 10.2653 7.67243 10.2322 7.7522C10.1991 7.83197 10.1505 7.90442 10.0893 7.96538L5.71433 12.3404C5.59105 12.4637 5.42384 12.5329 5.24949 12.5329C5.07514 12.5329 4.90793 12.4637 4.78464 12.3404C4.66136 12.2171 4.5921 12.0499 4.5921 11.8755C4.5921 11.7012 4.66136 11.534 4.78464 11.4107L8.69535 7.49999L4.7841 3.58929C4.66081 3.46601 4.59155 3.2988 4.59155 3.12445C4.59155 2.9501 4.66081 2.78289 4.7841 2.6596C4.90738 2.53632 5.07459 2.46706 5.24894 2.46706C5.42329 2.46706 5.5905 2.53632 5.71379 2.6596L5.71433 2.6607Z"
+                                    fill="black" fill-opacity="0.6" />
+                            </svg>
+                        </span>
+                    </li>
+                    <li
+                        class="flex items-center gap-[4px] font-satoshiregular text-[14px] text-[#000000] opacity-[60%]">
+                        Shop
+                        <span>
+                            <svg width="14" height="15" viewBox="0 0 14 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.71433 2.6607L10.0893 7.0357C10.1505 7.09666 10.1991 7.16911 10.2322 7.24888C10.2653 7.32865 10.2823 7.41417 10.2823 7.50054C10.2823 7.58691 10.2653 7.67243 10.2322 7.7522C10.1991 7.83197 10.1505 7.90442 10.0893 7.96538L5.71433 12.3404C5.59105 12.4637 5.42384 12.5329 5.24949 12.5329C5.07514 12.5329 4.90793 12.4637 4.78464 12.3404C4.66136 12.2171 4.5921 12.0499 4.5921 11.8755C4.5921 11.7012 4.66136 11.534 4.78464 11.4107L8.69535 7.49999L4.7841 3.58929C4.66081 3.46601 4.59155 3.2988 4.59155 3.12445C4.59155 2.9501 4.66081 2.78289 4.7841 2.6596C4.90738 2.53632 5.07459 2.46706 5.24894 2.46706C5.42329 2.46706 5.5905 2.53632 5.71379 2.6596L5.71433 2.6607Z"
+                                    fill="black" fill-opacity="0.6" />
+                            </svg>
+                        </span>
+                    </li>
+                    <li
+                        class="flex items-center gap-[4px] font-satoshiregular text-[14px] text-[#000000] opacity-[60%]">
+                        Men
+                        <span>
+                            <svg width="14" height="15" viewBox="0 0 14 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.71433 2.6607L10.0893 7.0357C10.1505 7.09666 10.1991 7.16911 10.2322 7.24888C10.2653 7.32865 10.2823 7.41417 10.2823 7.50054C10.2823 7.58691 10.2653 7.67243 10.2322 7.7522C10.1991 7.83197 10.1505 7.90442 10.0893 7.96538L5.71433 12.3404C5.59105 12.4637 5.42384 12.5329 5.24949 12.5329C5.07514 12.5329 4.90793 12.4637 4.78464 12.3404C4.66136 12.2171 4.5921 12.0499 4.5921 11.8755C4.5921 11.7012 4.66136 11.534 4.78464 11.4107L8.69535 7.49999L4.7841 3.58929C4.66081 3.46601 4.59155 3.2988 4.59155 3.12445C4.59155 2.9501 4.66081 2.78289 4.7841 2.6596C4.90738 2.53632 5.07459 2.46706 5.24894 2.46706C5.42329 2.46706 5.5905 2.53632 5.71379 2.6596L5.71433 2.6607Z"
+                                    fill="black" fill-opacity="0.6" />
+                            </svg>
+                        </span>
+                    </li>
+                    <li class="font-satoshiregular text-[14px] text-[#000000] opacity-[100%]">T-shirts</li>
+                </ul>
+            </div>
+            <!-- product Detail in productdetailpage -->
+            <div
+                class="product_detail_wrapper md:flex md:grid-cols-2 customlg:grid-cols-2 md:gap-[20px] lg:gap-[15px] customlg:gap-[40px] 2xl:gap-[40px] justify-between">
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- product reviews -->
+    <section class="product_reviews_section mb-[50px] lg:mb-[64px]">
+        <!-- first  -->
+        <div class="px-[16px] lg:px-[50px] 2xl:px-[100px] mb-[20px] 2xl:mb-[24px]">
+            <div
+                class="flex justify-around md:grid md:grid-cols-2 md:text-center gap-[45px] border-black/10 border-b-[1px] ">
+               
+                <div
+                    class="rating_reviews_btn font-satoshimedium cursor-pointer  border-b-[2px] text-[15px] lg:text-[20px] leading-[22px] whitespace-nowrap text-[#000000] opacity-[100%] pb-[20.5px] lg:pb-[24px]">
+                    Rating & Reviews</div>
+                <div
+                    class="faq_btn  cursor-pointer  font-satoshiregular text-[15px] lg:text-[20px] leading-[22px] whitespace-nowrap  text-[#000000] opacity-[60%] pb-[20.5px] lg:pb-[24px]">
+                    FAQs</div>
+            </div>
+        </div>
+
+
+        <!-- product details section -->
+        <div class="product_details_section  absolute z-[-1]  duration-800 opacity-[0]">
+            <!-- etho chakli -->
+        </div>
+
+
+        <!-- rating review -->
+        <div class="main_reviews_wrapper  z-[999]   ">
+            <!-- review lists section -->
+            <div class="reviews_main_btns flex justify-between items-center  px-[16px] pb-[20px] md:pb-[24px] lg:px-[50px] 2xl:px-[100px]">
+                <div class="flex gap-[6px] items-center justify-center cursor-default">
+                    <h1
+                        class="allreviews_content font-satoshibold text-[20px] lg:text-[24px] font-bold text-[#000000] opacity-[100%] ">
+                        All Reviews
+                    </h1>
+                    <span
+                        class="font-satoshiregular text-[14px] lg:text-[16px] leading-[22px] text-[#000000] opacity-[60%] review_count">(451)</span>
+                </div>
+                <!-- helpful or  more rated reviews -->
+                <div class="flex items-center gap-[8px] lg:gap-[10px] relative top-0">
+                    <div
+                        class="bg-bggray helpful_rating_wrapper cursor-pointer  opacity-[100%] rounded-[62px] py-[12px] px-[13px]">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.9375 9.6875V16.875C10.9375 17.1236 10.8387 17.3621 10.6629 17.5379C10.4871 17.7137 10.2486 17.8125 10 17.8125C9.75136 17.8125 9.5129 17.7137 9.33709 17.5379C9.16127 17.3621 9.0625 17.1236 9.0625 16.875V9.6875C9.0625 9.43886 9.16127 9.2004 9.33709 9.02459C9.5129 8.84877 9.75136 8.75 10 8.75C10.2486 8.75 10.4871 8.84877 10.6629 9.02459C10.8387 9.2004 10.9375 9.43886 10.9375 9.6875ZM15.625 15C15.3764 15 15.1379 15.0988 14.9621 15.2746C14.7863 15.4504 14.6875 15.6889 14.6875 15.9375V16.875C14.6875 17.1236 14.7863 17.3621 14.9621 17.5379C15.1379 17.7137 15.3764 17.8125 15.625 17.8125C15.8736 17.8125 16.1121 17.7137 16.2879 17.5379C16.4637 17.3621 16.5625 17.1236 16.5625 16.875V15.9375C16.5625 15.6889 16.4637 15.4504 16.2879 15.2746C16.1121 15.0988 15.8736 15 15.625 15ZM17.5 11.875H16.5625V3.125C16.5625 2.87636 16.4637 2.6379 16.2879 2.46209C16.1121 2.28627 15.8736 2.1875 15.625 2.1875C15.3764 2.1875 15.1379 2.28627 14.9621 2.46209C14.7863 2.6379 14.6875 2.87636 14.6875 3.125V11.875H13.75C13.5014 11.875 13.2629 11.9738 13.0871 12.1496C12.9113 12.3254 12.8125 12.5639 12.8125 12.8125C12.8125 13.0611 12.9113 13.2996 13.0871 13.4754C13.2629 13.6512 13.5014 13.75 13.75 13.75H17.5C17.7486 13.75 17.9871 13.6512 18.1629 13.4754C18.3387 13.2996 18.4375 13.0611 18.4375 12.8125C18.4375 12.5639 18.3387 12.3254 18.1629 12.1496C17.9871 11.9738 17.7486 11.875 17.5 11.875ZM4.375 12.5C4.12636 12.5 3.8879 12.5988 3.71209 12.7746C3.53627 12.9504 3.4375 13.1889 3.4375 13.4375V16.875C3.4375 17.1236 3.53627 17.3621 3.71209 17.5379C3.8879 17.7137 4.12636 17.8125 4.375 17.8125C4.62364 17.8125 4.8621 17.7137 5.03791 17.5379C5.21373 17.3621 5.3125 17.1236 5.3125 16.875V13.4375C5.3125 13.1889 5.21373 12.9504 5.03791 12.7746C4.8621 12.5988 4.62364 12.5 4.375 12.5ZM6.25 9.375H5.3125V3.125C5.3125 2.87636 5.21373 2.6379 5.03791 2.46209C4.8621 2.28627 4.62364 2.1875 4.375 2.1875C4.12636 2.1875 3.8879 2.28627 3.71209 2.46209C3.53627 2.6379 3.4375 2.87636 3.4375 3.125V9.375H2.5C2.25136 9.375 2.0129 9.47377 1.83709 9.64959C1.66127 9.8254 1.5625 10.0639 1.5625 10.3125C1.5625 10.5611 1.66127 10.7996 1.83709 10.9754C2.0129 11.1512 2.25136 11.25 2.5 11.25H6.25C6.49864 11.25 6.7371 11.1512 6.91291 10.9754C7.08873 10.7996 7.1875 10.5611 7.1875 10.3125C7.1875 10.0639 7.08873 9.8254 6.91291 9.64959C6.7371 9.47377 6.49864 9.375 6.25 9.375ZM11.875 5.625H10.9375V3.125C10.9375 2.87636 10.8387 2.6379 10.6629 2.46209C10.4871 2.28627 10.2486 2.1875 10 2.1875C9.75136 2.1875 9.5129 2.28627 9.33709 2.46209C9.16127 2.6379 9.0625 2.87636 9.0625 3.125V5.625H8.125C7.87636 5.625 7.6379 5.72377 7.46209 5.89959C7.28627 6.0754 7.1875 6.31386 7.1875 6.5625C7.1875 6.81114 7.28627 7.0496 7.46209 7.22541C7.6379 7.40123 7.87636 7.5 8.125 7.5H11.875C12.1236 7.5 12.3621 7.40123 12.5379 7.22541C12.7137 7.0496 12.8125 6.81114 12.8125 6.5625C12.8125 6.31386 12.7137 6.0754 12.5379 5.89959C12.3621 5.72377 12.1236 5.625 11.875 5.625Z"
+                                fill="black" />
+                        </svg>
+                        <div
+                            class="helpful_rated_list_wrapper opacity-0 absolute top-[46px] lg:top-[59px] left-[-40px] lg:left-[-87px] lg:w-max w-[100%] z-[999]">
+                            <div class="bg-bggray  opacity-[100%] rounded-[7px]  flex flex-col">
+                                <span onclick="highRated()"
+                                    class="helpful_icon font-satoshiregular rounded-t-sm  text-[15px] py-[16px] px-[20px] lg:text-[20px] leading-[22px] whitespace-nowrap  text-[#000000] opacity-[60%] ">Most
+                                    Helpful
+                                </span>
+                                <hr>
+                                <span onclick="lowRated()"
+                                    class="low_rating_icon font-satoshiregular rounded-b-sm  text-[15px] py-[16px] px-[20px] lg:text-[20px] leading-[22px] whitespace-nowrap  text-[#000000] opacity-[60%] ">Low
+                                    rating</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- old latest review -->
+                    <div class="old_latest_review_icons_wrapper cursor-pointer hidden lg:flex relative top-0">
+                        <button
+                            class="latest_review_btn latest_review font-satoshimedium lg:text-[16px] flex gap-[21px] justify-between items-center text-[#000000] font-bold bg-bggray opacity-[100%] rounded-[62px] py-[16px] px-[20px]">
+                            <p class="latest_btn_content">Latest</p>
+                            <span>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13.5306 6.53061L8.5306 11.5306C8.46092 11.6005 8.37813 11.656 8.28696 11.6939C8.1958 11.7317 8.09806 11.7512 7.99935 11.7512C7.90064 11.7512 7.8029 11.7317 7.71173 11.6939C7.62057 11.656 7.53778 11.6005 7.4681 11.5306L2.4681 6.53061C2.3272 6.38972 2.24805 6.19862 2.24805 5.99936C2.24805 5.80011 2.3272 5.60901 2.4681 5.46811C2.60899 5.32722 2.80009 5.24806 2.99935 5.24806C3.19861 5.24806 3.3897 5.32722 3.5306 5.46811L7.99997 9.93749L12.4693 5.46749C12.6102 5.32659 12.8013 5.24744 13.0006 5.24744C13.1999 5.24744 13.391 5.32659 13.5318 5.46749C13.6727 5.60838 13.7519 5.79948 13.7519 5.99874C13.7519 6.198 13.6727 6.38909 13.5318 6.52999L13.5306 6.53061Z"
+                                        fill="black" />
+                                </svg>
+                            </span>
+                        </button>
+                        <div
+                            class="old_review oldreview_btn opacity-0 font-satoshimedium absolute bottom-[-57px] lg:text-[16px]  gap-[21px] justify-between items-center text-[#000000] font-bold bg-bggray  rounded-[62px] py-[16px] px-[20px]">
+                            <p class="old_btn_content"> Old</p>
+                        </div>
+                    </div>
+                    <div>
+                        <button onclick="openReviewBox()"
+                            class="writereview_btn font-satoshimedium text-[12px] lg:text-[16px] text-[#FFFFFF] bg-[#000000] opacity-[100%] rounded-[62px] py-[12px] px-[16px] lg:py-[16px] lg:px-[20px]">
+                            Write a Review
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- faq section -->
+            <!-- third -->
+            <div>
+                <div
+                    class="product_detail_reviews_section px-[16px] lg:px-[50px] 2xl:px-[100px] flex flex-col gap-[16px] md:gap-[20px]  mb-[20px] md:mb-[36.42px] md:grid md:grid-cols-2">
+                    <!--  -->
+                </div>
+
+            </div>
+
+            <!-- view more -->
+            <div>
+                <div class=" px-[16px] text-center w-[100%] flex justify-center">
+                    <button
+                        class="load_more_reviews font-satoshimedium text-[14px] md:text-[16px] px-[36px] py-[14px] md:py-[15px] md:px-[80px] rounded-[62px] md:w-max border-[1.9px] border-black/10">
+                        <span class="text-[#000000] opacity-[100%] ">
+                            Load More Reviews
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Faq -->
+        <!--  -->
+        <div class="faq_section  h-0 overflow-hidden">
+            <div class="product_detail_slider_section">
+                <div
+                    class="faq_section_wrapper px-[16px] lg:px-[50px] 2xl:px-[100px] flex flex-col gap-[16px] md:gap-[20px]  mb-[20px] md:mb-[36.42px] md:grid md:grid-cols-2">
+
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <script src="../../components/componentsJs/faqslider.js"></script>
+
+
+    <!-- other products -->
+    <section class="pt-[50px] mb-[185px] lg:mb-[168px] text-center ">
+        <div class="mb-[40px] lg:mb-[55px] w-[100%] ">
+            <h1
+                class="uppercase font-integral text-[32px] leading-[36px]  text-center md:text-[30px] lg:text-[48px] 2xl:text-[48px] font-bold">
+                You might also like
+            </h1>
+        </div>
+        <div class="otherproducts mb-[24px] md:mb-[36px] md:px-[20px] lg:px-[50px] 2xl:px-[100px]">
+            <script>
+                fetch("../../components/swiper.html")
+                    .then(response => response.text())
+                    .then(data => {
+                        // console.log(data);
+                        var otherproducts = document.querySelector(".otherproducts");
+                        otherproducts.innerHTML = data;
+                        setTimeout(() => {
+                            new Swiper(".mySwiper", {
+                                slidesPerView: 2,
+                                spaceBetween: 30,
+                                pagination: {
+                                    el: ".swiper-pagination",
+                                    clickable: true,
+                                },
+                                breakpoints: {
+                                    320: {
+                                        slidesPerView: 'auto',
+                                        spaceBetween: 20,
+                                    },
+                                    768: {
+                                        slidesPerView: 3,
+                                        spaceBetween: 20,
+                                    }
+                                }
+                            });
+                        }, 100);
+
+                    })
+
+            </script>
+            <script src="../../components/componentsJs/primaryproductswiper.js"></script>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer class="footer bg-bggray lg:px-[50px] 2xl:px-[100px]">
+        <script>
+            fetch("../../components/footer.html")
+                .then(res => res.text())
+                .then(data => {
+                    var footer_section = document.querySelector(".footer");
+                    footer_section.innerHTML = data;
+                })
+        </script>
+    </footer>
+
+   <div
+        class="Addreview_box_wrapper fixed hidden top-0  text-black w-[100%] h-[100%] justify-center border-2 bg-black/85 px-[12px]  flex z-[999]  items-center ">
+        <div class="bg-white border-2 w-[100%]  md:w-[50%] lg:w-[40%] p-[20px] rounded-2xl">
+            <div class="flex justify-between items-baseline">
+                <h1
+                    class="mb-[22px] lg:mb-[14px] text-[24px] lg:text-[30px] 2xl:text-[40px]  font-integral font-bold text-[#000000] opacity-[100%]">
+                    Write A Review !
+                </h1>
+                <span class="close_icon_review_box" onclick="close_icon_review_box()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"
+                            fill="#0F1729" />
+                    </svg>
+                </span>
+            </div>
+            <form class="review_form flex flex-col forms gap-[15px]">
+                <input type="text" placeholder="Enter Your Name"
+                    class="outline-none border-b-[1px] p-[10px] font-satoshiregular leading-[20px] text-[14px] lg:text-[15px] 2xl:text-[16px] lg:leading-[22px] text-[#000000] opacity-[60%]"
+                    id="name" required>
+                <textarea placeholder="Give You Review"
+                    class="outline-none border-b-[1px] h-[33px] pl-[8px] overflow-hidden font-satoshiregular leading-[20px] text-[14px] lg:text-[15px] 2xl:text-[16px] lg:leading-[22px] text-[#000000] opacity-[60%]   resize-none"
+                    id="message" required></textarea>
+
+                <div
+                    class="font-satoshiregular pl-[4px] leading-[20px] text-[14px] lg:text-[15px] 2xl:text-[16px] text-[#000000] opacity-[60%]">
+                    <span class="text-[#000000] opacity-[60%] pl-[5px] pb-[5px] block">Give Rating</span>
+                    <div class="pl-[6px] cursor-pointer rating_wrapper flex gap-[5px]">
+                        <span data-starVal="1"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 122.879 117.188" enable-background="new 0 0 122.879 117.188" xml:space="preserve"><g><path d="M64.395,1.969l15.713,36.79l39.853,3.575c1.759,0.152,3.06,1.701,2.907,3.459c-0.073,0.857-0.479,1.604-1.079,2.129 l0.002,0.001L91.641,74.25l8.917,39.021c0.395,1.723-0.683,3.439-2.406,3.834c-0.883,0.203-1.763,0.018-2.466-0.441L61.441,96.191 L27.087,116.73c-1.516,0.906-3.48,0.412-4.387-1.104c-0.441-0.736-0.55-1.58-0.373-2.355h-0.003l8.918-39.021L1.092,47.924 c-1.329-1.163-1.463-3.183-0.301-4.512c0.591-0.676,1.405-1.042,2.235-1.087l39.748-3.566l15.721-36.81 c0.692-1.627,2.572-2.384,4.199-1.692C63.494,0.597,64.084,1.225,64.395,1.969L64.395,1.969z M74.967,43.023L61.441,11.351 L47.914,43.023l-0.004-0.001c-0.448,1.051-1.447,1.826-2.665,1.932l-34.306,3.078l25.819,22.545c0.949,0.74,1.438,1.988,1.152,3.24 l-7.674,33.578l29.506-17.641c0.986-0.617,2.274-0.672,3.342-0.033l29.563,17.674l-7.673-33.578l0.003-0.002 c-0.252-1.109,0.096-2.318,1.012-3.119l25.955-22.664L77.815,44.97C76.607,44.932,75.472,44.208,74.967,43.023L74.967,43.023z"/></g></svg></span>
+                        <span data-starVal="2"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 122.879 117.188" enable-background="new 0 0 122.879 117.188" xml:space="preserve"><g><path d="M64.395,1.969l15.713,36.79l39.853,3.575c1.759,0.152,3.06,1.701,2.907,3.459c-0.073,0.857-0.479,1.604-1.079,2.129 l0.002,0.001L91.641,74.25l8.917,39.021c0.395,1.723-0.683,3.439-2.406,3.834c-0.883,0.203-1.763,0.018-2.466-0.441L61.441,96.191 L27.087,116.73c-1.516,0.906-3.48,0.412-4.387-1.104c-0.441-0.736-0.55-1.58-0.373-2.355h-0.003l8.918-39.021L1.092,47.924 c-1.329-1.163-1.463-3.183-0.301-4.512c0.591-0.676,1.405-1.042,2.235-1.087l39.748-3.566l15.721-36.81 c0.692-1.627,2.572-2.384,4.199-1.692C63.494,0.597,64.084,1.225,64.395,1.969L64.395,1.969z M74.967,43.023L61.441,11.351 L47.914,43.023l-0.004-0.001c-0.448,1.051-1.447,1.826-2.665,1.932l-34.306,3.078l25.819,22.545c0.949,0.74,1.438,1.988,1.152,3.24 l-7.674,33.578l29.506-17.641c0.986-0.617,2.274-0.672,3.342-0.033l29.563,17.674l-7.673-33.578l0.003-0.002 c-0.252-1.109,0.096-2.318,1.012-3.119l25.955-22.664L77.815,44.97C76.607,44.932,75.472,44.208,74.967,43.023L74.967,43.023z"/></g></svg></span>
+                        <span data-starVal="3"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 122.879 117.188" enable-background="new 0 0 122.879 117.188" xml:space="preserve"><g><path d="M64.395,1.969l15.713,36.79l39.853,3.575c1.759,0.152,3.06,1.701,2.907,3.459c-0.073,0.857-0.479,1.604-1.079,2.129 l0.002,0.001L91.641,74.25l8.917,39.021c0.395,1.723-0.683,3.439-2.406,3.834c-0.883,0.203-1.763,0.018-2.466-0.441L61.441,96.191 L27.087,116.73c-1.516,0.906-3.48,0.412-4.387-1.104c-0.441-0.736-0.55-1.58-0.373-2.355h-0.003l8.918-39.021L1.092,47.924 c-1.329-1.163-1.463-3.183-0.301-4.512c0.591-0.676,1.405-1.042,2.235-1.087l39.748-3.566l15.721-36.81 c0.692-1.627,2.572-2.384,4.199-1.692C63.494,0.597,64.084,1.225,64.395,1.969L64.395,1.969z M74.967,43.023L61.441,11.351 L47.914,43.023l-0.004-0.001c-0.448,1.051-1.447,1.826-2.665,1.932l-34.306,3.078l25.819,22.545c0.949,0.74,1.438,1.988,1.152,3.24 l-7.674,33.578l29.506-17.641c0.986-0.617,2.274-0.672,3.342-0.033l29.563,17.674l-7.673-33.578l0.003-0.002 c-0.252-1.109,0.096-2.318,1.012-3.119l25.955-22.664L77.815,44.97C76.607,44.932,75.472,44.208,74.967,43.023L74.967,43.023z"/></g></svg></span>
+                        <span data-starVal="4"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 122.879 117.188" enable-background="new 0 0 122.879 117.188" xml:space="preserve"><g><path d="M64.395,1.969l15.713,36.79l39.853,3.575c1.759,0.152,3.06,1.701,2.907,3.459c-0.073,0.857-0.479,1.604-1.079,2.129 l0.002,0.001L91.641,74.25l8.917,39.021c0.395,1.723-0.683,3.439-2.406,3.834c-0.883,0.203-1.763,0.018-2.466-0.441L61.441,96.191 L27.087,116.73c-1.516,0.906-3.48,0.412-4.387-1.104c-0.441-0.736-0.55-1.58-0.373-2.355h-0.003l8.918-39.021L1.092,47.924 c-1.329-1.163-1.463-3.183-0.301-4.512c0.591-0.676,1.405-1.042,2.235-1.087l39.748-3.566l15.721-36.81 c0.692-1.627,2.572-2.384,4.199-1.692C63.494,0.597,64.084,1.225,64.395,1.969L64.395,1.969z M74.967,43.023L61.441,11.351 L47.914,43.023l-0.004-0.001c-0.448,1.051-1.447,1.826-2.665,1.932l-34.306,3.078l25.819,22.545c0.949,0.74,1.438,1.988,1.152,3.24 l-7.674,33.578l29.506-17.641c0.986-0.617,2.274-0.672,3.342-0.033l29.563,17.674l-7.673-33.578l0.003-0.002 c-0.252-1.109,0.096-2.318,1.012-3.119l25.955-22.664L77.815,44.97C76.607,44.932,75.472,44.208,74.967,43.023L74.967,43.023z"/></g></svg></span>
+                        <span data-starVal="5"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 122.879 117.188" enable-background="new 0 0 122.879 117.188" xml:space="preserve"><g><path d="M64.395,1.969l15.713,36.79l39.853,3.575c1.759,0.152,3.06,1.701,2.907,3.459c-0.073,0.857-0.479,1.604-1.079,2.129 l0.002,0.001L91.641,74.25l8.917,39.021c0.395,1.723-0.683,3.439-2.406,3.834c-0.883,0.203-1.763,0.018-2.466-0.441L61.441,96.191 L27.087,116.73c-1.516,0.906-3.48,0.412-4.387-1.104c-0.441-0.736-0.55-1.58-0.373-2.355h-0.003l8.918-39.021L1.092,47.924 c-1.329-1.163-1.463-3.183-0.301-4.512c0.591-0.676,1.405-1.042,2.235-1.087l39.748-3.566l15.721-36.81 c0.692-1.627,2.572-2.384,4.199-1.692C63.494,0.597,64.084,1.225,64.395,1.969L64.395,1.969z M74.967,43.023L61.441,11.351 L47.914,43.023l-0.004-0.001c-0.448,1.051-1.447,1.826-2.665,1.932l-34.306,3.078l25.819,22.545c0.949,0.74,1.438,1.988,1.152,3.24 l-7.674,33.578l29.506-17.641c0.986-0.617,2.274-0.672,3.342-0.033l29.563,17.674l-7.673-33.578l0.003-0.002 c-0.252-1.109,0.096-2.318,1.012-3.119l25.955-22.664L77.815,44.97C76.607,44.932,75.472,44.208,74.967,43.023L74.967,43.023z"/></g></svg></span>
+                    </div>
+                </div>
+
+                <div class="w-[100%] mt-[15px]">
+                    <button type="submit"
+                        class="font-satoshimedium w-[100%] lg:text-[14px] 2xl:text-[16px] text-[12px] xs:text-[14px] bg-[#000000] opacity-[100%] text-secondary rounded-[62px] py-[16px] px-[20px]">
+                        Submit Your Reviews
+                    </button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <script src="./productdetail.js"></script>
+    <script src="../../components/componentsJs/productpagereview.js">
+    </script>
+
+</body>
+
+</html>
